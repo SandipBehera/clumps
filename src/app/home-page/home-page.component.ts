@@ -10,7 +10,15 @@ declare var jQuery: any;
 
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    this.loadJsFile("../../assets/frontent_files/js/main.js"); 
+  }
+  loadJsFile(url: any): void {  
+    let node = document.createElement('script');  
+    node.src = url;  
+    node.type = 'text/javascript';  
+    document.getElementsByTagName('head')[0].appendChild(node);  
+  }  
 
   ngOnInit(): void {
   }

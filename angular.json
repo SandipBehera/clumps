@@ -27,7 +27,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/frontent_files/css/responsive.css"
             ],
             "scripts": []
           },
