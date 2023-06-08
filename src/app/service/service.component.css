@@ -1,0 +1,40 @@
+.pd0{
+    padding: 0px !important;
+}
+.about-serv{
+    background-color: #25b1c4;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 100px;
+}
+.fonth1{
+    font-size: 4rem;
+    color: white;
+}
+.btnadditional{
+    align-items: center;
+    padding-left: 16%;
+    padding-top: 5%;
+}
+.btneft{
+    background-color: pink !important;
+    color: black;
+    border-radius: 30px;
+}
+.btneft:hover{
+    color: white;
+}
+@media only screen and (max-width:768px){
+    .about-serv{
+        background-color: #25b1c4;
+        height: 100%;
+        padding-left: 10px;
+        padding-top: 45px;
+    }
+    .btnadditional{
+        align-items: center;
+        padding-left: 25%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    } 
+}
