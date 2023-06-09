@@ -13,6 +13,9 @@ export class ContactusComponent implements OnInit {
     phone: '',
     message:''
  }
+submitted : any = false;
+error : any = false;
+
   constructor(private apiService: APIService) { }
 
   ngOnInit(): void { }
@@ -25,11 +28,12 @@ export class ContactusComponent implements OnInit {
         description: this.formState.message
       }
       await this.apiService.CreateTodo (createContactInput);
-
-      console.log('Form submitted successfully:', this.formState);
+      this.submitted = true;
+      
       // Add any necessary success handling code here
 
     } catch (error) {
+      this.error = true;
       console.error('Error submitting form:', error);
       // Add any necessary error handling code here
     }

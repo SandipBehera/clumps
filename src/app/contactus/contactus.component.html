@@ -81,7 +81,12 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
-
+                            <div *ngIf="submitted" >
+                                <p style="color: green;">Your Request has been Submited</p>
+                            </div>
+                            <div *ngIf="error" >
+                                <p style="color: red;">OOps there is an Error</p>
+                            </div>
                             <div class="col-lg-12 col-md-12">
                                 <button type="submit" class="default-btn"><i class="flaticon-tick"></i>Send Message<span></span></button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
