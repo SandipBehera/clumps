@@ -27,7 +27,7 @@ export class ContactusComponent implements OnInit {
       }
       await this.apiService.CreateTodo (createContactInput);
 
-      console.log('Form submitted successfully:');
+      console.log('Form submitted successfully:', this.formState);
       // Add any necessary success handling code here
 
     } catch (error) {
