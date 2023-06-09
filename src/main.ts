@@ -36,7 +36,7 @@ const awsmobile = {
       "EMAIL"
   ]
 };
-Amplify.Logger.LOG_LEVEL = 'DEBUG';
+// Amplify.Logger.LOG_LEVEL = 'DEBUG';
 Amplify.configure(awsmobile);
 
 if (environment.production) {
