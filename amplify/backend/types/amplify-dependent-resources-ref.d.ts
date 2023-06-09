@@ -1,9 +1,20 @@
 export type AmplifyDependentResourcesAttributes = {
   "api": {
-    "contact": {
-      "ApiId": "string",
-      "ApiName": "string",
-      "RootUrl": "string"
+    "clumps": {
+      "GraphQLAPIEndpointOutput": "string",
+      "GraphQLAPIIdOutput": "string",
+      "GraphQLAPIKeyOutput": "string"
+    }
+  },
+  "auth": {
+    "clumps88679bbc": {
+      "AppClientID": "string",
+      "AppClientIDWeb": "string",
+      "IdentityPoolId": "string",
+      "IdentityPoolName": "string",
+      "UserPoolArn": "string",
+      "UserPoolId": "string",
+      "UserPoolName": "string"
     }
   },
   "function": {

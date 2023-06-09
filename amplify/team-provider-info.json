@@ -18,11 +18,11 @@
           "s3Key": "amplify-builds/clumpsContact-517367453947667a5134-build.zip"
         }
       },
-      "api": {
-        "contact": {}
-      },
       "auth": {
         "clumps88679bbc": {}
+      },
+      "api": {
+        "clumps": {}
       }
     }
   }

@@ -11,6 +11,7 @@ import { ServiceComponent } from './service/service.component';
 import { ProductsComponent } from './products/products.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactusComponent } from './contactus/contactus.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
