@@ -15,8 +15,7 @@ export class ContactusComponent implements OnInit {
  }
   constructor(private apiService: APIService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
   async handleSubmit(): Promise<void> {
     try {
       const createContactInput: CreateTodoInput = {
