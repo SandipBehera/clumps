@@ -52,37 +52,56 @@
 
             <div class="col-lg-6 col-md-12">
                 <div class="contact-form">
-                    <form id="contactForm" (ngSubmit)="handleSubmit()">
+                    <form id="contactForm" [formGroup]="myFrom" (ngSubmit)="handleSubmit()">
                         <div class="row">
                             <div class="col-lg-12 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="name" [(ngModel)]="formState.name" class="form-control" id="name" required data-error="Please enter your name" placeholder="Your name">
-                                    <div class="help-block with-errors"></div>
+                                    <input type="text" name="name" formControlName="name" [(ngModel)]="formState.name" class="form-control" id="name" required data-error="Please enter your name" placeholder="Your name">
+                                    <div *ngIf="myFrom.controls['name'].invalid && myFrom.controls['name'].touched" class="alert alert-danger">
+                                        <div *ngIf="myFrom.controls['name'].errors.required">
+                                        Name is required.
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-lg-12 col-md-6">
                                 <div class="form-group">
-                                    <input type="email" name="email" [(ngModel)]="formState.email" class="form-control" id="email" required data-error="Please enter your email" placeholder="Your email address">
-                                    <div class="help-block with-errors"></div>
+                                    <input type="email" name="email" formControlName="email" [(ngModel)]="formState.email" class="form-control" id="email" required data-error="Please enter your email" placeholder="Your email address">
+                                    <div *ngIf="myFrom.controls['email'].invalid && myFrom.controls['email'].touched" class="alert alert-danger">
+                                        <div *ngIf="myFrom.controls['email'].errors.required">
+                                        email is required.
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">
-                                    <input type="text" name="phone_number" [(ngModel)]="formState.phone" class="form-control" id="phone_number" required data-error="Please enter your phone number" placeholder="Your phone number">
-                                    <div class="help-block with-errors"></div>
+                                    <input type="text" name="phone_number" formControlName="phone" [(ngModel)]="formState.phone" class="form-control" id="phone_number" required data-error="Please enter your phone number" placeholder="Your phone number">
+                                    <div *ngIf="myFrom.controls['phone'].invalid && myFrom.controls['phone'].touched" class="alert alert-danger">
+                                        <div *ngIf="myFrom.controls['phone'].errors.required">
+                                        phone is required.
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">
-                                    <textarea name="message" id="message" [(ngModel)]="formState.message" class="form-control" cols="30" rows="6" required data-error="Please enter your message" placeholder="Write your message..."></textarea>
-                                    <div class="help-block with-errors"></div>
+                                    <textarea name="message" id="message" formControlName="message" [(ngModel)]="formState.message" class="form-control" cols="30" rows="6" required data-error="Please enter your message" placeholder="Write your message..."></textarea>
+                                    <div *ngIf="myFrom.controls['message'].invalid && myFrom.controls['message'].touched" class="alert alert-danger">
+                                        <div *ngIf="myFrom.controls['message'].errors.required">
+                                        message is required.
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                             <div *ngIf="submitted" >
                                 <p style="color: green;">Your Request has been Submited</p>
+                            </div>
+                            <div *ngIf="emptyValue" >
+                                <p style="color: red;">Please fill all the fields</p>
                             </div>
                             <div *ngIf="error" >
                                 <p style="color: red;">OOps there is an Error</p>
