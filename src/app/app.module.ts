@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './layouts/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AccodianComponent } from './pages/home/accodian/accodian.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HomeComponent } from './pages/home/home.component';
     // BlogsComponent,
     // ContactusComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    AccodianComponent
   ],
   imports: [
     BrowserModule,
