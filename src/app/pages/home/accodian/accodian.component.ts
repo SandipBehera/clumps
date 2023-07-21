@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class AccodianComponent implements OnInit {
 
   constructor() { }
-isaccodianclick=true
+  isAccordianOpen:boolean=false;
+  Text="01 Hello"
   ngOnInit(): void {
   }
 

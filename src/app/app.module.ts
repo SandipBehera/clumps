@@ -15,6 +15,8 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './layouts/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AccodianComponent } from './pages/home/accodian/accodian.component';
+import { CardComponent } from './pages/home/card/card.component';
+import { ContactUsComponent } from './pages/home/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { AccodianComponent } from './pages/home/accodian/accodian.component';
     // ContactusComponent,
     HeaderComponent,
     HomeComponent,
-    AccodianComponent
+    AccodianComponent,
+    CardComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

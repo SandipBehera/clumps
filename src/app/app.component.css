@@ -1,6 +1,7 @@
 
 .body{
-    width:100%;
+    width:95%;
+    padding:20px;
 }
 @media(min-width:1440px){
     .body{

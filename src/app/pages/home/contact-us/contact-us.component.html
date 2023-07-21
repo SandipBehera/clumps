@@ -1,0 +1,26 @@
+<form>
+    <div class="mb-4 flex flex-row gap-5">
+        <div class="flex items-center justify-center">
+            <input type="radio" id="say_hi" name="choice" value="Say Hi" checked class="mr-2 w-[20px] h-[20px]">
+            <label for="say_hi" class="mb-0">Say Hi</label>
+        </div>
+        <div class="flex items-center ">
+            <input type="radio" id="get_quote" name="choice" value="Get a Quote" class="mr-2 w-[20px] h-[20px]">
+            <label for="get_quote" class="mb-0">Get a Quote</label>
+        </div>
+    </div>
+    <div class="mb-4">
+        <label class="block font-semibold mb-1" for="name">Name:</label>
+        <input type="text" id="name" name="name" class="w-full p-2 border rounded-md" required>
+    </div>
+    <div class="mb-4">
+        <label class="block font-semibold mb-1" for="email">Email:</label>
+        <input type="email" id="email" name="email" class="w-full p-2 border rounded-md" required>
+    </div>
+
+    <div class="mb-4">
+        <label class="block font-semibold mb-1" for="message">Message:</label>
+        <textarea id="message" name="message" class="w-full p-2 border rounded-md resize-none" required></textarea>
+    </div>
+    <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md">Submit</button>
+</form>
