@@ -17,6 +17,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { AccodianComponent } from './pages/home/accodian/accodian.component';
 import { CardComponent } from './pages/home/card/card.component';
 import { ContactUsComponent } from './pages/home/contact-us/contact-us.component';
+import { FooterComponent } from './layouts/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ContactUsComponent } from './pages/home/contact-us/contact-us.component
     HomeComponent,
     AccodianComponent,
     CardComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

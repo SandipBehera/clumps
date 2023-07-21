@@ -1,26 +1,28 @@
-<div class="w-full mt-5 border-[2px] border-black rounded-[45px] shadow-[0px_5px_0px_0px_#191A23]">
-    <div class="w-full  flex flex-col p-[15px]">
+<div
+class="w-full mt-5 border-[2px] border-black rounded-[45px] shadow-[0px_5px_0px_0px_#191A23] " data-aos="fade-left" [style.background-color]="isAccordianOpen?'#25B1C4':'#fff'" [style.color]="isAccordianOpen?'#fff':'#000'">
+    
+    <div class="w-full  flex flex-col p-[25px]">
         <div class="w-full flex flex-row justify-evenly ">
             <div class="w-[70%] flex justify-start text-[20px] font-bold">
-                {{Text}}
+                {{workprogress.id}}  {{workprogress.name}}
             </div>
             <div class="w-[29%] flex justify-end">
                 <svg *ngIf="!isAccordianOpen" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                    fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16" (click)="isAccordianOpen=true">
+                    fill="currentColor" class="bi bi-plus cursor-pointer	" viewBox="0 0 16 16" (click)="toggle()">
                     <path
                         d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                 </svg>
                 <svg *ngIf="isAccordianOpen" xmlns="http://www.w3.org/2000/svg" width="36" height="26"
-                    fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16" (click)="isAccordianOpen=false">
+                    fill="currentColor" class="bi bi-dash cursor-pointer	" viewBox="0 0 16 16" (click)="toggle()">
                     <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
                 </svg>
             </div>
         </div>
         <hr class="mt-2" *ngIf="isAccordianOpen"/>
     </div>
-    <div class="w-full p-[15px]" *ngIf="isAccordianOpen">
+    <div class="w-full p-[25px]" *ngIf="isAccordianOpen"  data-aos="zoom-in">
         
-        <p class="font-bold text-[16px]">
+        <p class="font-bold text-[16px] text-white">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, expedita eum. Autem, nobis ipsa rem
             et qui neque delectus nam accusamus praesentium hic sunt iusto impedit quibusdam, temporibus dolorum magnam?
         </p>
