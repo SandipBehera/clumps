@@ -1,7 +1,7 @@
-<div class="w-full flex flex-row justify-between items-center border-2 rounded-[45px] px-[15px] py-[10px]">
+<div *ngFor="let item of services" class="w-full flex flex-row justify-between items-center border-2 rounded-[45px] px-[15px] py-[10px]"  data-aos="fade-left">
     <div class="w-[80%] flex flex-row justify-start items-center gap-4">
-        <span class="text-black font-semibold text-[20px]">01</span>
-        <p class="text-black font-semibold text-[16px]">clumps software crm</p>
+        <span class="text-black font-semibold text-[20px]">{{item.id}}</span>
+        <p class="text-black font-semibold text-[16px]">{{item.name}}</p>
     </div>
     <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">

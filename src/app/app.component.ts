@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Amplify} from 'aws-amplify';
-
+import * as  AOS  from "aos";
 
 @Component({
   selector: 'app-root',
@@ -44,6 +44,8 @@ export class AppComponent {
     };
     
     Amplify.configure(awsmobile);
+    AOS.init();
+
   }
   loadJsFile(url: any): void {  
     let node = document.createElement('script');  
