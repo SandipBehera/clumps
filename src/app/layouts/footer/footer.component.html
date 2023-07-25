@@ -1,15 +1,15 @@
 <div class="w-full bg-black flex flex-col gap-5 justify-center items-center rounded-t-[14px]">
     <div class="w-[90%] bg-black flex flex-col gap-5 justify-center items-center">
-        <div class="w-full flex flex-row gap-5 mt-[70px] mb-[70px]">
-            <ul class="w-[40%] flex flex-row justify-between">
+        <div class="w-full flex flex-col md:flex-row gap-5 mt-[70px] mb-[70px]">
+            <ul class="w-full md:w-[60%] lg:w-[40%] flex flex-row  flex-wrap justify-between">
                 <li><a routerLink="about-us" class="text-white">About Us</a></li>
                 <li><a href="#" class="text-white">Product</a></li>
                 <li><a href="#" class="text-white">Services</a></li>
-                <li><a href="#" class="text-white">Use Case</a></li>
+                <li><a href="#" class="text-white hidden md:block">Use Case</a></li>
                 <li><a href="#" class="text-white">Pricing</a></li>
                 <li><a href="#" class="text-white">Blog</a></li>
             </ul>
-            <div class="w-[55%] flex flex-row gap-5 justify-center text-center">
+            <div class="w-full md:w-[38%] lg:w-[55%] flex flex-row gap-5 justify-center text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                     <circle cx="15" cy="15" r="15" fill="white" />
                     <path d="M8.22178 22.0586H11.3059V12.0742H8.22178V22.0586Z" fill="black" />
@@ -36,8 +36,8 @@
         <div class="w-full flex flex-col gap-5 justify-start items-start mb-[70px]">
             <img src="{{hostUrl}}assets/frontent_files/img/clumpsoftware-black.png" alt="" srcset="">
         </div>
-        <div class=" w-full flex flex-row mb-[70px] justify-start items-center">
-            <div class="w-[50%] flex flex-col">
+        <div class=" w-full flex flex-col-reverse md:flex-row mb-[70px] justify-start items-center">
+            <div class="w-full lg:w-[50%] flex flex-col">
                 <p class="w-max px-[10px] py-[5px] bg-[#25B1C4] rounded-[5px] text-[20px]">Contact Us</p>
                 <p class="text-white mt-[15px]">
                     Email: info@clumpssoftware.com<br />
@@ -46,9 +46,9 @@
                     Hyderabad, Telangana, 500032
                 </p>
             </div>
-            <div class="w-[48%] flex flex-row">
-                <div class=" w-[90%] bg-slate-600 px-[15px] py-[40px] rounded-[14px] ">
-                    <form action="" method="post" class="flex flex-row gap-5">
+            <div class="w-full lg:w-[48%] flex flex-row">
+                <div class=" w-[90%] bg-slate-600 px-[15px] py-[40px] rounded-[14px] mb-5 lg:mb-0">
+                    <form action="" method="post" class="flex flex-col  lg:flex-row gap-5">
                         <input type="email" name="email" placeholder="Email" id="" class="px-[35px] py-[18px] border-2 border-white rounded-[14px] bg-transparent text-white">
                         <button type="submit" class="bg-[#25B1C4] px-[35px] py-[18px] text-white rounded-[14px] hover:shadow-lg hover:shadow-white	">Subscribe to news</button>
                     </form>
@@ -57,8 +57,8 @@
 
         </div>
         <hr class="bg-white w-full h-[2px] rounded"/>
-        <div class="w-full flex flex-row justify-between items-center ">
-            <span class="flex flex-row justify-between items-center gap-7">
+        <div class="w-full flex flex-col md:flex-row justify-between items-center ">
+            <span class="flex flex-col md:flex-row justify-between items-center gap-7">
                 <p class="text-white mt-3 mb-3">
                     © 2023 Clumps Software Solutions. All Rights Reserved.
                 </p>
