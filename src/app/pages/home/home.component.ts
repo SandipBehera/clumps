@@ -8,12 +8,12 @@ import { environment } from 'src/environments/environment';
 export class HomeComponent implements OnInit {
 
   Allservices:any=[
-    {id:'01',name:'Website Design and Development'},
-    {id:'02',name:'Custom Software Development'},
-    {id:'03',name:'App Design and Development'},
-    {id:'04',name:'Social Media Management & Marketing '},
-    {id:'05',name:'Business Process  Digitalization & Automation'},
-    {id:'06',name:'Video Ad Making & Content Creation'},
+    {id:'01',name:'Website Design and Development',URL:'product/web-development'},
+    {id:'02',name:'Custom Software Development',URL:''},
+    {id:'03',name:'App Design and Development',URL:''},
+    {id:'04',name:'Social Media Management & Marketing ',URL:''},
+    {id:'05',name:'Business Process  Digitalization & Automation',URL:''},
+    {id:'06',name:'Video Ad Making & Content Creation',URL:''},
   ]
   AllProducts:any=[
     {id:'01',name:'Clumps Systemic Solutions'},
@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
   ]
   constructor() { }
 
-  hostUrl=environment.hostURL
+  hostUrl=environment.hostURL;
   ngOnInit(): void {
   }
 

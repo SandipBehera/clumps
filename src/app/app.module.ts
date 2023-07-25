@@ -18,6 +18,7 @@ import { AccodianComponent } from './pages/home/accodian/accodian.component';
 import { CardComponent } from './pages/home/card/card.component';
 import { ContactUsComponent } from './pages/home/contact-us/contact-us.component';
 import { FooterComponent } from './layouts/footer/footer.component';
+import { WebDevelopmentComponent } from './pages/products/web-development/web-development.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FooterComponent } from './layouts/footer/footer.component';
     AccodianComponent,
     CardComponent,
     ContactUsComponent,
-    FooterComponent
+    FooterComponent,
+    WebDevelopmentComponent
   ],
   imports: [
     BrowserModule,

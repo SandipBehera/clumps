@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 // import { HomePageComponent } from './home-page/home-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { WebDevelopmentComponent } from './pages/products/web-development/web-development.component';
 // import { ServiceComponent } from './service/service.component';
 // import { ProductsComponent } from './products/products.component';
 // import { ContactusComponent } from './contactus/contactus.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', redirectTo:'',pathMatch: 'full'},
   {path: 'about-us', component: AboutUsComponent},
+  {path: 'product/web-development', component:WebDevelopmentComponent },
   // {path: 'services', component: ServiceComponent },
   // {path: 'products', component: ProductsComponent },
   // {path: 'contact-us', component: ContactusComponent },

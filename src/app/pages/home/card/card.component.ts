@@ -7,7 +7,7 @@ import { Component, OnInit ,Input} from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  @Input() services=[{id:'',name:''}];
+  @Input() services=[{id:'',name:'',URL:''}];
   constructor() { }
 
   ngOnInit(): void {
