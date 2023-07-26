@@ -151,7 +151,7 @@
 </section>
 <!-- accodian start -->
 <section class="w-full flex flex-col">
-    <div class="w-full flex flex-col justify-between mt-[100px]">
+    <div class="w-full flex flex-col justify-between mt-[100px] ">
         <div class="w-full flex flex-col gap-4 md:flex-row justify-start mt-[50px]">
             <div
                 class="py-[2px] px-[10px] mr-8 border-[1px] border-[#191A23] flex justify-center items-center rounded-[14px] bg-black text-[#fff] text-[16px]">
@@ -161,7 +161,7 @@
                 Step-by-Step Guide to <br /> Achieving Your Business Goals
             </span>
         </div>
-        <div class="w-full" *ngFor="let item of WorkProgress">
+        <div class="w-full hover:scale-[102%]" *ngFor="let item of WorkProgress" >
             <app-accodian [workprogress]="item"></app-accodian>
 
         </div>

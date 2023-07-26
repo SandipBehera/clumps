@@ -19,6 +19,7 @@ import { CardComponent } from './pages/home/card/card.component';
 import { ContactUsComponent } from './pages/home/contact-us/contact-us.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { WebDevelopmentComponent } from './pages/products/web-development/web-development.component';
+import { SoftwareDevelopmentComponent } from './pages/products/software-development/software-development.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { WebDevelopmentComponent } from './pages/products/web-development/web-de
     CardComponent,
     ContactUsComponent,
     FooterComponent,
-    WebDevelopmentComponent
+    WebDevelopmentComponent,
+    SoftwareDevelopmentComponent
   ],
   imports: [
     BrowserModule,
