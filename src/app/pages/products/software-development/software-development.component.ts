@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-software-development',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class SoftwareDevelopmentComponent implements OnInit {
 
   constructor() { }
-
+  hostUrl=environment.hostURL;
   ngOnInit(): void {
   }
 

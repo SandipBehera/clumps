@@ -9,19 +9,19 @@ export class HomeComponent implements OnInit {
 
   Allservices:any=[
     {id:'01',name:'Website Design and Development',URL:'product/web-development'},
-    {id:'02',name:'Custom Software Development',URL:''},
+    {id:'02',name:'Custom Software Development',URL:'product/software-development'},
     {id:'03',name:'App Design and Development',URL:''},
     {id:'04',name:'Social Media Management & Marketing ',URL:''},
     {id:'05',name:'Business Process  Digitalization & Automation',URL:''},
     {id:'06',name:'Video Ad Making & Content Creation',URL:''},
   ]
   AllProducts:any=[
-    {id:'01',name:'Clumps Systemic Solutions'},
-    {id:'02',name:'Clumps CRM Plus'},
-    {id:'03',name:'Clumps Service AUTOBOT'},
-    {id:'04',name:'Clumps Service & Support Desk'},
-    {id:'05',name:'Clumps Retail & Distributor  Suite'},
-    {id:'06',name:'Clumps One Marketing Suite'},
+    {id:'01',name:'Clumps Systemic Solutions',URL:''},
+    {id:'02',name:'Clumps CRM Plus',URL:''},
+    {id:'03',name:'Clumps Service AUTOBOT',URL:''},
+    {id:'04',name:'Clumps Service & Support Desk',URL:''},
+    {id:'05',name:'Clumps Retail & Distributor  Suite',URL:''},
+    {id:'06',name:'Clumps One Marketing Suite',URL:''},
   ]
   WorkProgress:any=[
     {id:'01',name:'Consultation',desc:''},
