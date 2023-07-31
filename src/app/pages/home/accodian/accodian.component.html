@@ -20,11 +20,9 @@ class="w-full mt-5 border-[2px] border-[#33B5CC] rounded-[45px] shadow-[0px_5px_
         </div>
         <hr class="mt-2" *ngIf="isAccordianOpen"/>
     </div>
-    <div class="w-full p-[25px]" *ngIf="isAccordianOpen"  data-aos="zoom-in">
+    <div class="w-full p-[25px]" *ngIf="isAccordianOpen"  data-aos="zoom-in" [innerHTML]="workprogress.desc">
         
         <p class="font-bold text-[16px] text-white">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, expedita eum. Autem, nobis ipsa rem
-            et qui neque delectus nam accusamus praesentium hic sunt iusto impedit quibusdam, temporibus dolorum magnam?
         </p>
     </div>
 </div>

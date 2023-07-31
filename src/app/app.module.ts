@@ -10,8 +10,9 @@ import { AccodianComponent } from './pages/home/accodian/accodian.component';
 import { CardComponent } from './pages/home/card/card.component';
 import { ContactUsComponent } from './pages/home/contact-us/contact-us.component';
 import { FooterComponent } from './layouts/footer/footer.component';
-import { WebDevelopmentComponent } from './pages/products/web-development/web-development.component';
-import { SoftwareDevelopmentComponent } from './pages/products/software-development/software-development.component';
+import { WebDevelopmentComponent } from './pages/services/web-development/web-development.component';
+import { SoftwareDevelopmentComponent } from './pages/services/software-development/software-development.component';
+import { AppDevelopmentComponent } from './pages/services/app-development/app-development.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SoftwareDevelopmentComponent } from './pages/products/software-developm
     ContactUsComponent,
     FooterComponent,
     WebDevelopmentComponent,
-    SoftwareDevelopmentComponent
+    SoftwareDevelopmentComponent,
+    AppDevelopmentComponent
   ],
   imports: [
     BrowserModule,

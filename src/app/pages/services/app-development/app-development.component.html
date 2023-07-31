@@ -1,0 +1,93 @@
+<section class="w-full flex flex-col">
+    <div class="w-full flex flex-row justify-between mt-[150px]">
+        <div class="w-full md:w-[38%] flex flex-col justify-center items-start gap-5">
+            <h2 class="text-[60px] text-black font-bold">
+                Mobile Application Development Services
+            </h2>
+            <h2 class="text-[20px] text-black font-bold">
+                A Blend of High-Standard Mobile Programming and Creativity
+            </h2>
+            <p>
+                In mobile development since 2017, Clumps Software Solutions creates native, cross-platform and
+                progressive web applications with stable performance, human-centered design and a unique selling
+                proposition to stand out in a fierce market.
+            </p>
+            <button type="button"
+                class="py-[10px] px-[15px] border-[1px] border-[#191A23] rounded-[14px] bg-black text-[#fff] mt-5">Schedule
+                A Meeting</button>
+        </div>
+        <div class="w-full md:w-[58%] flex justify-end">
+            <img src="{{hostUrl}}assets/frontent_files/img/services/app-development/app-development.png" />
+        </div>
+    </div>
+
+</section>
+<section class="w-full flex flex-col mt-[100px] mb-[100px]">
+    <div class="w-full flex flex-col justify-center text-center items-center">
+        <h2 class="text-center text-[50px] font-bold ">
+            Our Mobile Application Development Services
+        </h2>
+        <p class="w-[80%]">
+            Clumps Software Solutions assists in specific development stages as well as provides full-cycle mobile app
+            implementation. Our mobile app development services include:
+        </p>
+    </div>
+    <div class="w-full flex flex-row  flex-wrap justify-center mt-[150px] gap-5  ">
+        <div *ngFor="let item of appDevService" class="w-[28%] flex flex-col gap-5 border-2 p-4 rounded-[40px]">
+            <h2 class="text-[20px] font-bold ">{{item.name}}</h2>
+            <hr class="w-full border-[2px]">
+            <div>
+                <p>
+                    {{item.desc}}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="w-full flex flex-col justify-center text-center items-center">
+        <button type="button" class="py-[10px] px-[15px] border-[1px] border-[#191A23] rounded-[14px] text-[#000] mt-5">
+            Get in touch
+        </button>
+    </div>
+</section>
+
+<section class="w-full flex flex-col mt-[100px] mb-[100px]">
+    <div class="w-full flex flex-col justify-center text-center items-center">
+        <h2 class="text-center text-[50px] font-bold ">
+            Our Mobile Application Development Services
+        </h2>
+        <p class="w-[80%]">
+            Clumps Software Solutions assists in specific development stages as well as provides full-cycle mobile app
+            implementation. Our mobile app development services include:
+        </p>
+    </div>
+    <div class="w-full flex flex-row  flex-wrap justify-center mt-[150px] gap-5  mb-5">
+        <div *ngFor="let item of mobileDev" class="w-[28%] flex flex-col gap-5 border-2 p-4 rounded-[40px] justify-center items-center">
+            <h2 class="text-[20px] font-bold h-[50px]">{{item.name}}</h2>
+            <hr class="w-full border-[2px]">
+            <div class="w-full flex justify-center items-center">
+                    
+                    <img class="w-auto h-[100px]" src="{{hostUrl}}assets/frontent_files/img/services/app-development/icons/{{item.URL}}" />
+            </div>
+        </div>
+    </div>
+    <div class="w-full flex justify-center items-center text-center">
+        <h2 class="w-[80%] text-[#33b5CC] text-[25px] font-bold mb-5">We provide mobile app services for all platforms, devices, and audiences, including: </h2>
+    </div>
+    <div class="w-full flex flex-row justify-center items-center gap-5">
+       
+        <div *ngFor="let item of starData" class="w-[20%] flex flex-col gap-5 border-2 p-4 rounded-[40px] justify-center items-center"> 
+            
+            <span>
+                <img class="h-[50px]" src="{{hostUrl}}assets/frontent_files/img/services/app-development/icons/4066310-1.png" alt="" srcset="">
+            </span>
+            <p>
+                {{item.desc}}
+            </p>
+        </div>
+    </div>
+    <div class="w-full flex flex-col justify-center text-center items-center">
+        <button type="button" class="py-[10px] px-[15px] border-[1px] border-[#191A23] rounded-[14px] text-[#000] mt-5">
+            Get in touch
+        </button>
+    </div>
+</section>
