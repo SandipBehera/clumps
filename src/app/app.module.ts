@@ -13,6 +13,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { WebDevelopmentComponent } from './pages/services/web-development/web-development.component';
 import { SoftwareDevelopmentComponent } from './pages/services/software-development/software-development.component';
 import { AppDevelopmentComponent } from './pages/services/app-development/app-development.component';
+import { SocialMediaComponent } from './pages/services/social-media/social-media.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AppDevelopmentComponent } from './pages/services/app-development/app-de
     FooterComponent,
     WebDevelopmentComponent,
     SoftwareDevelopmentComponent,
-    AppDevelopmentComponent
+    AppDevelopmentComponent,
+    SocialMediaComponent
   ],
   imports: [
     BrowserModule,
