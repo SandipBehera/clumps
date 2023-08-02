@@ -14,6 +14,7 @@ import { WebDevelopmentComponent } from './pages/services/web-development/web-de
 import { SoftwareDevelopmentComponent } from './pages/services/software-development/software-development.component';
 import { AppDevelopmentComponent } from './pages/services/app-development/app-development.component';
 import { SocialMediaComponent } from './pages/services/social-media/social-media.component';
+import { BusinessAutomationComponent } from './pages/services/business-automation/business-automation.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SocialMediaComponent } from './pages/services/social-media/social-media
     WebDevelopmentComponent,
     SoftwareDevelopmentComponent,
     AppDevelopmentComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    BusinessAutomationComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,238 @@
-<p>social-media works!</p>
+<section class="w-full flex flex-col">
+    <div class="w-full flex flex-row flex-wrap justify-between mt-[150px]">
+        <div class="w-full md:w-[48%] flex justify-end">
+            <img class="h-auto" src="{{hostUrl}}assets/frontent_files/img/services/social-media/social-media-1.png"
+                alt="homepage" data-aos="zoom-in" data-aos-duration="1000" />
+        </div>
+        <div class="w-full md:w-[38%] flex flex-col justify-center items-start gap-5">
+            <h2 class="text-[40px] md:text-[60px] text-black font-bold">
+                Empowering Businesses with Innovative Solutions
+            </h2>
+            <p>
+                Welcome to Clumps Software Solutions, where we are committed to empowering businesses with innovative
+                solutions. With a passion for technology and a focus on delivering exceptional results, we specialize in
+                providing cutting-edge software solutions tailored to meet your unique needs.
+            </p>
+            <button type="button"
+                class="py-[10px] px-[15px] border-[1px] border-[#191A23] rounded-[14px] bg-black text-[#fff] mt-5">Book
+                a consultation </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ---------------------------------------------------------------------------- -->
+<section class="w-full flex flex-col my-5">
+    <h1 class="w-full text-center align-middle  font-bold text-[50px] text-[#33B5CC] mt-[50px]">
+        Scalable marketing for every stage of your funnel and every milestone of your sales funnel.
+    </h1>
+    <p class="font-bold text-[20px] text-center my-5">Click on a digital marketing service to discover why you need it
+        and how we do it better than anyone else.</p>
+    <div>
+        <h2 class="font-bold text-[30px] text-center mb-5 text-[#33B5CC]">Our Professional Digital Marketing Services
+            Includes</h2>
+    </div>
+    <div class="w-full flex flex-row flex-wrap justify-center items-start gap-5">
+        <div *ngFor="let item of disitalMarketing"
+            class="w-[15%] flex flex-col gap-5 border-2 shadow-md rounded-[20px] p-[15px]">
+            <p class="h-[50px]  whitespace-nowrap overflow-hidden text-ellipsis">{{item.name}}</p>
+            <hr class="w-full p-1" />
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="51" height="27" viewBox="0 0 51 27" fill="none">
+                    <path
+                        d="M5.98132 11.4993C13.8938 11.4993 21.8062 11.4993 29.7637 11.4993C32.0115 11.4993 34.3043 11.4993 36.5522 11.4993C37.9908 11.4993 37.9908 9.34473 36.5522 9.34473C28.6397 9.34473 20.7273 9.34473 12.7699 9.34473C10.522 9.34473 8.22918 9.34473 5.98132 9.34473C4.54269 9.34473 4.54269 11.4993 5.98132 11.4993Z"
+                        fill="black" />
+                    <path
+                        d="M1.48553 17.3166C10.7467 17.4459 19.9629 17.2735 29.2241 16.8857C31.8316 16.7564 34.4391 16.6702 37.0467 16.4979C38.4853 16.4117 38.4853 14.2572 37.0467 14.3433C27.8304 14.8604 18.5693 15.1621 9.35304 15.1621C6.74552 15.1621 4.138 15.1621 1.53048 15.119C0.0468968 15.119 0.0468974 17.2735 1.48553 17.3166Z"
+                        fill="black" />
+                    <path
+                        d="M31.1581 2.49333C35.7887 5.25113 40.2844 8.22437 44.6452 11.37C45.6792 12.1025 46.7582 12.8351 47.7473 13.6538C48.017 13.8693 48.4666 14.214 48.4216 14.5587C48.4216 14.4294 48.4666 14.5156 48.3767 14.5587C48.2868 14.6018 48.2418 14.688 48.1519 14.7311C47.8821 14.9465 47.5674 15.0758 47.2977 15.2482C44.87 16.7132 42.4423 18.2214 39.9697 19.6865C37.2273 21.3671 34.4849 23.0476 31.6976 24.685C30.4837 25.4176 31.6076 27.2705 32.8215 26.5379C38.0815 23.3492 43.3415 20.1605 48.5565 16.9718C49.7703 16.2392 50.9392 15.2913 50.4897 13.7831C50.085 12.4473 48.6464 11.6286 47.5674 10.8529C45.2746 9.17239 42.9369 7.49185 40.5541 5.8975C37.8117 4.08769 35.0693 2.32095 32.237 0.597326C31.0682 -0.0921249 29.9442 1.76078 31.1581 2.49333Z"
+                        fill="black" />
+                </svg>
+            </span>
+        </div>
+    </div>
+    <div>
+        <h2 class="w-full text-center align-middle  font-bold text-[50px] text-[#33B5CC] mt-[50px]">
+            Reinforce Your Digital Eminence and Magnify Sales with Our Digital Marketing Service
+        </h2>
+    </div>
+    <div class="w-full flex flex-row justify-center items-center">
+        <div class="w-[48%]">
+            <p>
+                Band together with the finest team who possesses over a decade of expertise in crafting responsive
+                online marketing strategies.
+
+            </p>
+            <ul class="list-disc p-5">
+                <li>Are you experiencing an online marketing lull?
+                <li>Struggling with diminished lead generation and business inquiries?</li>
+                <li>Confused about where to begin with your internet marketing efforts?</li>
+                <li>Current agency’s marketing strategies not achieving the desired outcomes?</li>
+            </ul>
+            <p>If yes, it’s time to seek assistance from the expert digital marketers at Clumps Software Solutions.
+            </p>
+        </div>
+        <div class="w-[48%]">
+            <img src="{{hostUrl}}assets/frontent_files/img/services/social-media/social-media-2.png" alt="" srcset="">
+        </div>
+    </div>
+</section>
+
+<!------------------------------ digital markiting  --------------------------------->
+<section>
+    <div>
+        <h2 class="w-full text-center align-middle  font-bold text-[50px] text-[#33B5CC] mt-[50px] mb-[20px]">
+            Grow your Business with Latest Digital Marketing Techniques
+        </h2>
+    </div>
+    <hr class="w-full border-2"/>
+    <h2 class="w-full text-center align-middle  font-bold text-[30px] text-[#33B5CC] mt-[20px] mb-[20px] mb-[20px]">
+        PPC Advertising
+    </h2>
+  
+
+    <div class="w-full flex flex-row justify-center items-center">
+        <div class="w-[48%]">
+            <p class="w-full">
+                PPC stands for 'pay-per-click', a popular model of digital marketing in which advertisers pay a fee each time one of their ads is clicked or viewed. Essentially, it’s a way of buying visits/leads to your site than organic traffic.It is one of the most cost-effective solutions for a business to drive highly motivated traffic to their websites. With an able PPC Management service, you'll be able to reach out to your target audience and pay only for the clicks you get, thereby reducing the total advertising expenditure.
+            </p>
+            <ul class="list-disc p-5">
+                <li>Competitor and industry analysis</li>
+                <li>Landing Page Creation</li>
+                <li>Customized PPC ads campaigns</li>
+                <li>Accurate ROI reporting</li>
+                <li>Campaign management and Monitoring</li>
+            </ul>
+        </div>
+        <div class="w-[48%]">
+            <img src="{{hostUrl}}assets/frontent_files/img/services/social-media/social-media-3.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <!-- Mobile marckting -->
+
+
+    <h2 class="w-full text-center align-middle  font-bold text-[30px] text-[#33B5CC] mt-[20px] mb-[20px]">
+        Mobile Marketing
+    </h2>
+
+    <div class="w-full flex flex-row justify-center items-center">
+        <div class="w-[48%]">
+            <img src="{{hostUrl}}assets/frontent_files/img/services/social-media/social-media-4.png" alt="" srcset="">
+        </div>
+        <div class="w-[48%]">
+            <p>
+                Mobile marketing consists of ads that appear on mobile smartphones, tablets, or other handheld devices. Mobile marketing ad formats, customization, and styles can vary, as many social media platforms, websites etc.
+            </p>
+            <ul class="list-disc p-5">
+                <li>Location Based</li>
+                <li>adsSearch</li>
+                <li>App based Ads</li>
+                <li>Web ads</li>
+                <li>Campaign management and Monitoring</li>
+            </ul>
+        </div>
+       
+    </div>
+
+     <!-- Email marckting -->
+
+
+     <h2 class="w-full text-center align-middle  font-bold text-[30px] text-[#33B5CC] mt-[20px] mb-[20px]">
+        Email Marketing
+    </h2>
+
+    <div class="w-full flex flex-row justify-center items-center">
+       
+        <div class="w-[48%]">
+            <p>
+                When you want to grow your brand or sell your products, email marketing is one of the most popular and effective tools around for digital marketing solutions. We focus on delivering successful email campaigns on your behalf – campaigns that help engage prospects, drive traffic and sales, and retain customers. And we don’t just help you execute email programs.We bring innovation to your email marketing and provide strategic recommendations to make it a revenue-generating channel. email
+            </p>
+        </div>
+        <div class="w-[48%]">
+            <img src="{{hostUrl}}assets/frontent_files/img/services/social-media/social-media-5.png" alt="" srcset="">
+        </div>
+    </div>
+
+
+    <!-- Social Media Marketing & Optimization  -->
+
+
+    <h2 class="w-full text-center align-middle  font-bold text-[30px] text-[#33B5CC] mt-[20px] mb-[20px]">
+        Social Media Marketing & Optimization
+    </h2>
+
+    <div class="w-full flex flex-row justify-center items-center">
+       
+        <div class="w-[48%]">
+            <p>
+                Social Media Marketing & Optimization (SMMO) is the process of increasing the awareness of a product/services, brand or event by using a number of social media channels and communities to generate viral publicity.Our Social media expert’s setup your business profile in a professional manner with trendy posters, infographics and videos will be designed and updated in all social medias at regular time intervals. Social Medias (Facebook, Twitter, Blogger, Pinterest, Linkedin, Youtube, Instagram,Tumblr) are such a robust platform to engage the customers in an influential way! The process that is involved in our social media optimization service is shared below -
+            </p>
+                      
+            <ul class="list-disc p-5">
+                <li>Business Analysis</li>
+                <li>Planning social media strategy</li>
+                <li>Competitor social profile analysis</li>
+                <li>Planning a content / Ad strategy</li>
+                <li>Creating social media graphics</li>
+                <li>Managing pages and accounts</li>
+                <li>Analysis and optimization</li>
+                <li>Posts Comment monitoring</li>
+                <li>Paid Ad campaigns for social growth</li>
+                <li>Social media performance monitoring</li>
+                <li>Scheduling posts on social profiles</li>
+                <li>Reporting and next month strategy</li>
+            </ul>
+        </div>
+        <div class="w-[48%]">
+            <img src="{{hostUrl}}assets/frontent_files/img/services/social-media/social-media-7.png" alt="" srcset="">
+        </div>
+    </div>
+</section>
+<!-- ---------------------------Tools We use-------------------------------- -->
+<section class="w-full flex justify-center items-center">
+    <img src="{{hostUrl}}assets/frontent_files/img/services/social-media/social-media-6.png" alt="" srcset="">
+</section>
+<!-- cotact us -->
+<section class="w-full flex flex-row justify-center items-center mb-[100px] mt-[50px]">
+    <div class="w-[80%] flex flex-row justify-around items-center border-[3px] border-[#33B5CC] rounded-md shadow-lg p-10">
+        <div class="w-[30%] flex flex-col justify-around items-start gap-5">
+            <img  src="{{hostUrl}}assets/frontent_files/img/services/contact-us.png" alt="" srcset="">
+            <div class=" flex flex-row justify-center items-center gap-5">
+                <span>
+                    <img class="h-[25px]" src="{{hostUrl}}assets/frontent_files/img/services/contacu-us-phone.png" alt="" srcset="">
+                </span>
+                <span>Phone: +91 9665891425</span>
+            </div>
+            <div class=" flex flex-row justify-center items-center gap-5">
+                <span>
+                    <img class="h-[25px]" src="{{hostUrl}}assets/frontent_files/img/services/contacu-us-mail.png" alt="" srcset="">
+                </span>
+                <span>Email: info@clumpssoftware.com</span>
+            </div>
+        </div>
+        <div class=" w-[48%] flex flex-col gap-5">
+            <div>
+                <h2 class="text-[30px] font-bold text-[#33B5CC] ">Get In Touch</h2>
+            </div>
+            <form>
+                <div class="mb-4">
+                    <label class="block font-semibold mb-1" for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block font-semibold mb-1" for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border rounded-md" required>
+                </div>
+            
+                <div class="mb-4">
+                    <label class="block font-semibold mb-1" for="message">Message:</label>
+                    <textarea id="message" name="message" class="w-full p-2 border rounded-md resize-none" required></textarea>
+                </div>
+                <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md">Submit</button>
+            </form>
+        </div>
+
+    </div>
+</section>

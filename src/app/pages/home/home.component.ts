@@ -11,8 +11,8 @@ export class HomeComponent implements OnInit {
     {id:'01',name:'Website Design and Development',URL:'product/web-development'},
     {id:'02',name:'Custom Software Development',URL:'product/software-development'},
     {id:'03',name:'App Design and Development',URL:'product/app-development'},
-    {id:'04',name:'Social Media Management & Marketing ',URL:''},
-    {id:'05',name:'Business Process  Digitalization & Automation',URL:''},
+    {id:'04',name:'Social Media Management & Marketing ',URL:'product/social-media-ads'},
+    {id:'05',name:'Business Process  Digitalization & Automation',URL:'product/business-automation'},
     {id:'06',name:'Video Ad Making & Content Creation',URL:''},
   ]
   AllProducts:any=[

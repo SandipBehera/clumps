@@ -5,6 +5,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { WebDevelopmentComponent } from './pages/services/web-development/web-development.component';
 import { SoftwareDevelopmentComponent } from './pages/services/software-development/software-development.component';
 import { AppDevelopmentComponent } from './pages/services/app-development/app-development.component';
+import { SocialMediaComponent } from './pages/services/social-media/social-media.component';
+import { BusinessAutomationComponent } from './pages/services/business-automation/business-automation.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -13,6 +15,8 @@ const routes: Routes = [
   {path: 'product/web-development', component:WebDevelopmentComponent },
   {path: 'product/software-development', component:SoftwareDevelopmentComponent },
   {path: 'product/app-development', component:AppDevelopmentComponent },
+  {path: 'product/social-media-ads', component:SocialMediaComponent },
+  {path: 'product/business-automation', component:BusinessAutomationComponent },
 ];
 
 @NgModule({
