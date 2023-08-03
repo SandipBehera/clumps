@@ -24,8 +24,10 @@
 <section class="w-full flex flex-col justify-center items-center my-[100px] py-[150px] bg-[#33B5CC] rounded-lg">
     <div class="w-[80%] ">
         <div class="relative flex justify-center items-center">
-            <img class="absolute  top-[-50px] left-0"src="{{hostUrl}}assets/frontent_files/img/b-automation/icons/8018563-2.png" alt="">
-            <p class="w-[80%] text-black">Business automation services (also known as 'business process automation services's) include business
+            <img class="absolute  top-[-50px] left-0"
+                src="{{hostUrl}}assets/frontent_files/img/b-automation/icons/8018563-2.png" alt="">
+            <p class="w-[80%] text-black">Business automation services (also known as 'business process automation
+                services's) include business
                 automation consulting as well as implementation and evolution of business automation solutions. These
                 services are aimed at improving business processes and overall business productivity. Clumps Software
                 Solutions offers consulting assistance and practical help with implementation and evolution of workflow
@@ -35,5 +37,218 @@
             <img class="absolute  bottom-[-50px] right-0"
                 src="{{hostUrl}}assets/frontent_files/img/b-automation/icons/8018563-1.png" alt="">
         </div>
+    </div>
+</section>
+<section class="w-full flex flex-col gap-5 justify-center items-center my-5">
+    <div class="w-full text-center flex justify-center items-center">
+        <h1 class="text-[50px] font-bold text-[#33B5CC]">Business Automation Use Cases Clumps Software Solutions Covers
+        </h1>
+    </div>
+
+    <!-- ----------------------------------------industry-------------------------------------- -->
+    <div class="w-[80%] flex flex-wrap gap-5 justify-center items-center">
+        <h2 class="w-full justify-start items-start text-[30px] font-bold my-5">By Industry</h2>
+        <div *ngFor="let items of ByIndustry"
+            class="w-[27%] flex flex-col border-2 rounded-[30px] p-3 justify-center items-center">
+            <h2 class="text-[20px] text-[#33B5CC] h-[80px]">{{items.name}}</h2>
+            <ul [innerHTML]="items.desc" class="list-disc pl-4 h-[300px]">
+            </ul>
+        </div>
+    </div>
+
+    <div class="w-[80%] flex flex-wrap gap-5 justify-center items-center">
+        <h2 class="w-full justify-start items-start text-[30px] font-bold my-5">By Business Function</h2>
+        <div *ngFor="let items of business"
+            class="w-[27%] flex flex-col border-2 rounded-[30px] p-3 justify-center items-center">
+            <h2 class="text-[20px] text-[#33B5CC] h-[80px]">{{items.name}}</h2>
+            <ul [innerHTML]="items.desc" class="list-disc pl-4 h-[300px]">
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="w-full flex flex-col justify-center items-center my-5">
+    <div class="w-full flex justify-center items-center mb-5">
+        <h2 class="w-[80%] text-center text-[50px] font-bold text-[#33B5CC]">
+            Benefits of Business Automation Services by Clumps Software Solutions
+        </h2>
+    </div>
+    <div class="w-full flex justify-center items-center">
+        <div class="w-[80%] flex flex-row flex-wrap justify-center items-center gap-5">
+            <div class="w-[45%] h-[300px] flex flex-col justify-center gap-3 border-2 rounded-[30px] p-4">
+                <img class="w-[50px]"
+                    src="{{hostUrl}}assets/frontent_files/img/services/app-development/icons/4066310-1.png" alt=""
+                    srcset="">
+                <h2 class="text-[20px] text-[#33b5CC] font-bold">Focus on value of business automation</h2>
+                <p>We don’t offer automation for the sake of it. Our consultants thoroughly analyze your business
+                    processes and suggest the most suitable use cases for automation.</p>
+            </div>
+            <div class="w-[45%] h-[300px] flex flex-col justify-center gap-3 border-2 rounded-[30px] p-4">
+                <img class="w-[50px]"
+                    src="{{hostUrl}}assets/frontent_files/img/services/app-development/icons/4066310-1.png" alt=""
+                    srcset="">
+                <h2 class="text-[20px] text-[#33b5CC] font-bold">Holistic approach to business automation</h2>
+                <p>We start with mapping out your business processes to establish a clear picture of each process step
+                    and identify potential bottlenecks. We can also redesign the processes to ensure their efficient
+                    automation.</p>
+            </div>
+            <div class="w-[45%] h-[300px] flex flex-col justify-center gap-3 border-2 rounded-[30px] p-4">
+                <img class="w-[50px]"
+                    src="{{hostUrl}}assets/frontent_files/img/services/app-development/icons/4066310-1.png" alt=""
+                    srcset="">
+                <h2 class="text-[20px] text-[#33b5CC] font-bold">Strong data security</h2>
+                <p>Applying 114 Security controls required by ISO 27001 , we safeguard the information assets that we
+                    access during the business automation project.</p>
+            </div>
+            <div class="w-[45%] h-[300px] flex flex-col justify-center gap-3 border-2 rounded-[30px] p-4 ">
+                <img class="w-[50px]"
+                    src="{{hostUrl}}assets/frontent_files/img/services/app-development/icons/4066310-1.png" alt=""
+                    srcset="">
+                <h2 class="text-[20px] text-[#33b5CC] font-bold">Optimized implementation time and costs</h2>
+                <p>We apply CI/CD and DevOps methodologies to reduce the time of business automation solution
+                    implementation. Besides, we leverage low-code development tools where applicable to achieve fast and
+                    cost-effective business automation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="w-full flex flex-col justify-center items-center my-5 gap-y-5">
+    <div class="w-full flex justify-center items-center mb-2">
+        <h2 class="w-[80%] text-center text-[50px] font-bold text-[#33B5CC]">
+            Clumps Software Solution’s Offerings on Business Automation Services
+        </h2>
+    </div>
+    <div class="w-full bg-[#38DBDB] flex flex-col p-5 rounded-[20px]">
+        <h2 class="w-full text-[20px] font-bold">Business automation consulting</h2>
+        <div>
+            <ul class="w-full flex flex-wrap flex-row list-decimal p-5">
+                <li class="w-[48%] gap-x-5 pr-4">Analyzing your business automation needs and current business processes.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Eliciting technical requirements for a business automaton solution.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Elaborating on an automation strategy, including redesign of your business processes.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Prioritizing features for a business automation solution.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Designing automated workflows. </li>
+                <li class="w-[48%] gap-x-5 pr-4">Advising on suitable automation technologies and solution type.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Suggesting useful integrations (e.g., enterprise systems, data sources, email services).</li>
+                <li class="w-[48%] gap-x-5 pr-4">Drawing a business automation project plan.</li>
+            </ul>
+        </div>
+        <button type="button" class=" w-max float-left py-[10px] px-[15px] border-[1px] border-[#191A23] rounded-[14px] bg-black text-[#fff] mt-5">
+            Book a consultation 
+        </button>
+    </div>
+    <div class="w-full bg-[#38DBDB] flex flex-col p-5 rounded-[20px]">
+        <h2 class="w-full text-[20px] font-bold">Business automation solution implementation </h2>
+        <div>
+            <ul class="w-full flex flex-wrap flex-row list-decimal p-5">
+                <li class="w-[48%] gap-x-5 pr-4">Analyzing your business automation needs and current business processes.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Eliciting technical requirements for a business automaton solution.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Redesigning business processes to adjust them to automation.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Choosing a solution type and a suitable tech stack to build the solution.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Designing the solution’s UX and UI. </li>
+                <li class="w-[48%] gap-x-5 pr-4">Developing the solution and integrating it with enterprise systems, data sources,
+                    email services, etc.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Quality assurance and support of the solution.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Comprehensive user training.</li>
+            </ul>
+
+        </div>
+        <button type="button" class=" w-max float-left py-[10px] px-[15px] border-[1px] border-[#191A23] rounded-[14px] bg-black text-[#fff] mt-5">
+            Book a consultation 
+        </button>
+    </div>
+    <div class="w-full bg-[#38DBDB] flex flex-col p-5 rounded-[20px]">
+        <h2 class="w-full text-[20px] font-bold">Business automation solution implementation </h2>
+        <div>
+            <ul class="w-full flex flex-wrap flex-row list-decimal p-5">
+                <li class="w-[48%] gap-x-5 pr-4">Evaluating the current business process automation solution and detecting bottlenecks.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Conducting feasibility studies and solution ROI calculation.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Suggesting and implementing new functional modules, individual features, UX/UI improvements, etc.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Solution re-architecting and modernization. </li>
+                <li class="w-[48%] gap-x-5 pr-4">Adding new integrations with third-party software.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Introducing advanced technologies (e.g., image analysis, IoT) to the solution. </li>
+                <li class="w-[48%] gap-x-5 pr-4">Quality assurance and support of the solution.</li>
+                <li class="w-[48%] gap-x-5 pr-4">Comprehensive user training.</li>
+            </ul>
+
+        </div>
+        <button type="button" class=" w-max float-left py-[10px] px-[15px] border-[1px] border-[#191A23] rounded-[14px] bg-black text-[#fff] mt-5">
+            Book a consultation 
+        </button>
+    </div>
+</section>
+
+<section class="w-full flex flex-col justify-center items-center my-5 gap-y-5">
+    <div class="w-full flex flex-col justify-center items-center mb-5">
+        <h2 class="w-[80%] text-center text-[50px] font-bold text-[#33B5CC] mb-4 ">
+            Why It’s Time to Leverage Business Automation 
+        </h2>
+        <p class="w-[80%]">
+            Businesses can lose up to 20 to 30% in revenue each year due to inefficient processes, so more and more businesses turn to business process automation companies to get benefits, such as: 
+        </p>
+    </div>
+    <div class="w-full flex flex-row justify-center items-center gap-x-5 mb-5">
+        <div class="w-[20%] h-[200px] flex flex-col justify-center gap-3 border-2 rounded-[30px] p-4 ">
+            <h2 class="text-[20px] text-[#33b5CC] font-bold">+10%</h2>
+            <p>process error rate due to automated workflows </p>
+        </div>
+        <div class="w-[20%]  h-[200px] flex flex-col justify-center gap-3 border-2 rounded-[30px] p-4 ">
+            <h2 class="text-[20px] text-[#33b5CC] font-bold">+15%</h2>
+            <p>faster business processes due to centralized data storage and automated data search </p>
+        </div>
+        <div class="w-[20%] h-[200px] flex flex-col justify-center gap-3 border-2 rounded-[30px] p-4 ">
+            <h2 class="text-[20px] text-[#33b5CC] font-bold">-15%</h2>
+            <p>employee productivity due to reduced time spent on repetitive tasks </p>
+        </div>
+    </div>
+    <div class="w-[80%] flex flex-col justify-center gap-3 border-2 rounded-[30px] p-4 ">
+        <h2 class="text-[20px] text-[#33b5CC] font-bold">Get the Most of Business Automation Capabilities </h2>
+        <p class="w-[80%]">employee productivity due to reduced time spent on repetitive tasksClumps Software Solutions' Team will help you with conceptualization , design ,development, and upgrade of a business automation solution to get rid of disintegrated workflows , aommunication silos and process errors. </p>
+        <div class="w-full">
+            <button class=" w-max float-right border-2 border-[#33B5CC] px-5 py-2 rounded-[20px]">Contact Our Team</button>
+        </div>
+        
+    </div>
+</section>
+
+<section class="w-full flex flex-row justify-center items-center mb-[100px] mt-[50px]">
+    <div class="w-[80%] flex flex-row justify-around items-center border-[3px] border-[#33B5CC] rounded-md shadow-lg p-10">
+        <div class="w-[30%] flex flex-col justify-around items-start gap-5">
+            <img  src="{{hostUrl}}assets/frontent_files/img/services/contact-us.png" alt="" srcset="">
+            <div class=" flex flex-row justify-center items-center gap-5">
+                <span>
+                    <img class="h-[25px]" src="{{hostUrl}}assets/frontent_files/img/services/contacu-us-phone.png" alt="" srcset="">
+                </span>
+                <span>Phone: +91 9665891425</span>
+            </div>
+            <div class=" flex flex-row justify-center items-center gap-5">
+                <span>
+                    <img class="h-[25px]" src="{{hostUrl}}assets/frontent_files/img/services/contacu-us-mail.png" alt="" srcset="">
+                </span>
+                <span>Email: info@clumpssoftware.com</span>
+            </div>
+        </div>
+        <div class=" w-[48%] flex flex-col gap-5">
+            <div>
+                <h2 class="text-[30px] font-bold text-[#33B5CC] ">Get In Touch</h2>
+            </div>
+            <form>
+                <div class="mb-4">
+                    <label class="block font-semibold mb-1" for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block font-semibold mb-1" for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border rounded-md" required>
+                </div>
+            
+                <div class="mb-4">
+                    <label class="block font-semibold mb-1" for="message">Message:</label>
+                    <textarea id="message" name="message" class="w-full p-2 border rounded-md resize-none" required></textarea>
+                </div>
+                <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md">Submit</button>
+            </form>
+        </div>
+
     </div>
 </section>
