@@ -1,5 +1,5 @@
 <div
-class="w-full mt-5 border-[2px] border-[#33B5CC] rounded-[45px] shadow-[0px_5px_0px_0px_#33B5CC] hover:scale-125" data-aos="fade-left" [style.background-color]="isAccordianOpen?'#25B1C4':'#fff'" [style.color]="isAccordianOpen?'#fff':'#000'">
+class="w-full mt-5 border-[2px] border-[#33B5CC] rounded-[45px] shadow-[0px_5px_0px_0px_#33B5CC] hover:border-[#d59a48] hover:shadow-[0px_5px_0px_0px_#d59a48] cursor-pointer" data-aos="fade-left" [style.background-color]="isAccordianOpen?'#25B1C4':'#fff'" [style.color]="isAccordianOpen?'#fff':'#000'" (click)="toggle()">
     
     <div class="w-full  flex flex-col p-[25px]">
         <div class="w-full flex flex-row justify-evenly ">
@@ -12,6 +12,7 @@ class="w-full mt-5 border-[2px] border-[#33B5CC] rounded-[45px] shadow-[0px_5px_
                     <path
                         d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                 </svg>
+
                 <svg *ngIf="isAccordianOpen" xmlns="http://www.w3.org/2000/svg" width="36" height="26"
                     fill="currentColor" class="bi bi-dash cursor-pointer	" viewBox="0 0 16 16" (click)="toggle()">
                     <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
