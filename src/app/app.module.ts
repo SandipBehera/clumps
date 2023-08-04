@@ -15,6 +15,7 @@ import { SoftwareDevelopmentComponent } from './pages/services/software-developm
 import { AppDevelopmentComponent } from './pages/services/app-development/app-development.component';
 import { SocialMediaComponent } from './pages/services/social-media/social-media.component';
 import { BusinessAutomationComponent } from './pages/services/business-automation/business-automation.component';
+import { ContactComponent } from './layouts/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BusinessAutomationComponent } from './pages/services/business-automatio
     SoftwareDevelopmentComponent,
     AppDevelopmentComponent,
     SocialMediaComponent,
-    BusinessAutomationComponent
+    BusinessAutomationComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 <section class="w-full flex flex-col">
-    <div class="w-full flex flex-row justify-between mt-[150px]">
+    <div class="w-full flex flex-col md:flex-row justify-between mt-[150px] gap-y-5">
         <div class="w-full md:w-[38%] flex flex-col justify-center items-start gap-5">
-            <h2 class="text-[60px] text-black font-bold">
+            <h2 class=" text-[50px] md:text-[60px] text-black font-bold">
                 Mobile Application Development Services
             </h2>
             <h2 class="text-[20px] text-black font-bold">
@@ -32,8 +32,8 @@
             implementation. Our mobile app development services include:
         </p>
     </div>
-    <div class="w-full flex flex-row  flex-wrap justify-center mt-[150px] gap-5  ">
-        <div *ngFor="let item of appDevService" class="w-[28%] flex flex-col gap-5 border-2 p-4 rounded-[40px]">
+    <div class="w-full flex flex-col md:flex-row  flex-wrap justify-center mt-[150px] gap-5  ">
+        <div *ngFor="let item of appDevService" class="w-full md:w-[28%] flex flex-col gap-5 border-2 p-4 rounded-[40px]">
             <h2 class="text-[20px] font-bold ">{{item.name}}</h2>
             <hr class="w-full border-[2px]">
             <div>
@@ -61,21 +61,21 @@
         </p>
     </div>
     <div class="w-full flex flex-row  flex-wrap justify-center mt-[150px] gap-5  mb-5">
-        <div *ngFor="let item of mobileDev" class="w-[28%] flex flex-col gap-5 border-2 p-4 rounded-[40px] justify-center items-center">
-            <h2 class="text-[20px] font-bold h-[50px]">{{item.name}}</h2>
+        <div *ngFor="let item of mobileDev" class="w-[45%] md:w-[28%] flex flex-col gap-5 border-2 p-4 rounded-[40px] justify-center items-center">
+            <h2 class="text-[20px] font-bold h-[85px] sm:h-[75px] md:h-[50px]">{{item.name}}</h2>
             <hr class="w-full border-[2px]">
             <div class="w-full flex justify-center items-center">
                     
-                    <img class="w-auto h-[100px]" src="{{hostUrl}}assets/frontent_files/img/services/app-development/icons/{{item.URL}}" />
+                    <img class="w-auto h-[70px] md:h-[100px]" src="{{hostUrl}}assets/frontent_files/img/services/app-development/icons/{{item.URL}}" />
             </div>
         </div>
     </div>
     <div class="w-full flex justify-center items-center text-center">
         <h2 class="w-[80%] text-[#33b5CC] text-[25px] font-bold mb-5">We provide mobile app services for all platforms, devices, and audiences, including: </h2>
     </div>
-    <div class="w-full flex flex-row justify-center items-center gap-5">
+    <div class="w-full flex flex-row flex-wrap justify-center items-center gap-5">
        
-        <div *ngFor="let item of starData" class="w-[20%] flex flex-col gap-5 border-2 p-4 rounded-[40px] justify-center items-center"> 
+        <div *ngFor="let item of starData" class=" md:w-[20%] lg:h-[200px] flex flex-col gap-5 border-2 p-4 rounded-[40px] justify-center items-center"> 
             
             <span>
                 <img class="h-[50px]" src="{{hostUrl}}assets/frontent_files/img/services/app-development/icons/4066310-1.png" alt="" srcset="">
@@ -87,7 +87,7 @@
     </div>
     
     <div class="w-full flex justify-center items-center mt-5">
-        <p class="w-[80%]">
+        <p class="w-full md:w-[80%]">
             Apps for all versions of iOS, watchOS, Android, and Wear OS Native & cross-platform apps (React Native, Xamarin, Flutter) Enterprise apps (for internal use) and monetized products Mobile app-only and mobile app + web app solutions (incl. PWAs*) *PWAs (Progressive Web Apps) are responsive apps that can be accessed on mobile via a shortcut. PWAs help increase engagement by 90%+, cut load time by 2.5x, and make desktop & mobile conversions even. Learn more about PWAs.
         </p>
     </div>
@@ -103,7 +103,7 @@
         <h2 class="text-center text-[50px] font-bold ">
             Building All Mobile Features Modern Users Need
         </h2>
-        <p class="w-[80%]">
+        <p class="w-full md:w-[80%]">
             Whether creating an enterprise or consumer mobile app, we rely on our expertise in different techs and tools to make an app truly helpful and worth taking your users’ screen space. Though we can repeat the features, no two apps are identical: we find a unique value proposition for each app and tailor the functionality uniquely to its audience’s needs.
         </p>
     </div>
@@ -113,10 +113,10 @@
 </section>
 <section class="flex flex-col mt-[100px] mb-5">
     <div class="flex flex-col gap-5 justify-center items-center text-center">
-        <h2 class=" w-[80%] text-[30px] font-bold text-[#33B5CC]">
+        <h2 class="w-full md:w-[80%] text-[30px] font-bold text-[#33B5CC]">
             Customized Software Solutions.
         </h2>
-        <p class=" w-[80%]">
+        <p class="w-full md:w-[80%]">
             Augment your existing development team to complete a big project or build a new software solution or
             application from scratch with the best custom software development company, Clumps Software Solutions.
         </p>
@@ -125,7 +125,7 @@
         <div class="w-full md:w-[40%] flex flex-col">
             <img src="{{hostUrl}}assets/frontent_files/img/services/app-development/app-develop-3.png" />
         </div>
-        <div class="w-full md:w-[58%] flex flex-col justify-start items-start gap-5 mb-2 p-5">
+        <div class="w-full md:w-[58%] flex flex-col justify-start items-start gap-5 mb-2 md:p-5">
             <div class="flex flex-row gap-5">
                 <div class="w-[20%] md:w-[15%]">
                     <img src="{{hostUrl}}assets/frontent_files/img/services/app-development/icons/160138-1.png"
@@ -174,7 +174,7 @@
     </div>
     
     
-    <div class="w-full flex justify-center items-center ">
+    <div class="w-full flex justify-center items-center mt-5">
         <button type="button"
             class="px-5 py-2 border-4 border-[#33B5CC] rounded hover:bg-[#33B5CC] hover:text-white">Schedule A
             Meeting
@@ -182,44 +182,4 @@
     </div>
 </section>
 
-<section class="w-full flex flex-row justify-center items-center mb-[100px] mt-[50px]">
-    <div class="w-[80%] flex flex-row justify-around items-center border-[3px] border-[#33B5CC] rounded-md shadow-lg p-10">
-        <div class="w-[30%] flex flex-col justify-around items-start gap-5">
-            <img  src="{{hostUrl}}assets/frontent_files/img/services/contact-us.png" alt="" srcset="">
-            <div class=" flex flex-row justify-center items-center gap-5">
-                <span>
-                    <img class="h-[25px]" src="{{hostUrl}}assets/frontent_files/img/services/contacu-us-phone.png" alt="" srcset="">
-                </span>
-                <span>Phone: +91 9665891425</span>
-            </div>
-            <div class=" flex flex-row justify-center items-center gap-5">
-                <span>
-                    <img class="h-[25px]" src="{{hostUrl}}assets/frontent_files/img/services/contacu-us-mail.png" alt="" srcset="">
-                </span>
-                <span>Email: info@clumpssoftware.com</span>
-            </div>
-        </div>
-        <div class=" w-[48%] flex flex-col gap-5">
-            <div>
-                <h2 class="text-[30px] font-bold text-[#33B5CC] ">Get In Touch</h2>
-            </div>
-            <form>
-                <div class="mb-4">
-                    <label class="block font-semibold mb-1" for="name">Name:</label>
-                    <input type="text" id="name" name="name" class="w-full p-2 border rounded-md" required>
-                </div>
-                <div class="mb-4">
-                    <label class="block font-semibold mb-1" for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="w-full p-2 border rounded-md" required>
-                </div>
-            
-                <div class="mb-4">
-                    <label class="block font-semibold mb-1" for="message">Message:</label>
-                    <textarea id="message" name="message" class="w-full p-2 border rounded-md resize-none" required></textarea>
-                </div>
-                <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md">Submit</button>
-            </form>
-        </div>
-
-    </div>
-</section>
+<app-contact></app-contact>
