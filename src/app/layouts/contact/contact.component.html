@@ -1,16 +1,19 @@
 <section class="w-full flex flex-row justify-center items-center mb-[100px] mt-[50px]">
-    <div class=" w-[95%] md:w-[80%] flex flex-col-reverse md:flex-row justify-around items-center border-[3px] border-[#33B5CC] rounded-md shadow-lg p-10">
+    <div
+        class=" w-[95%] md:w-[80%] flex flex-col-reverse md:flex-row justify-around items-center border-[3px] border-[#33B5CC] rounded-md shadow-lg p-10">
         <div class=" w-full md:w-[30%] flex flex-col justify-around items-start gap-5">
-            <img  src="{{hostUrl}}assets/frontent_files/img/services/contact-us.png" alt="" srcset="">
+            <img src="{{hostUrl}}assets/frontent_files/img/services/contact-us.png" alt="" srcset="">
             <div class="w-full flex flex-row justify-center items-center gap-5">
                 <span>
-                    <img class="h-[25px]" src="{{hostUrl}}assets/frontent_files/img/services/contacu-us-phone.png" alt="" srcset="">
+                    <img class="h-[25px]" src="{{hostUrl}}assets/frontent_files/img/services/contacu-us-phone.png"
+                        alt="" srcset="">
                 </span>
                 <span>Phone: +91 9665891425</span>
             </div>
             <div class="w-full flex flex-row justify-center items-center gap-5">
                 <span>
-                    <img class="h-[25px]" src="{{hostUrl}}assets/frontent_files/img/services/contacu-us-mail.png" alt="" srcset="">
+                    <img class="h-[25px]" src="{{hostUrl}}assets/frontent_files/img/services/contacu-us-mail.png" alt=""
+                        srcset="">
                 </span>
                 <span>Email: info@clumpssoftware.com</span>
             </div>
@@ -19,21 +22,64 @@
             <div>
                 <h2 class="text-[30px] font-bold text-[#33B5CC] ">Get In Touch</h2>
             </div>
-            <form>
+            <form [formGroup]="myFrom" (ngSubmit)="handleSubmit()">
                 <div class="mb-4">
                     <label class="block font-semibold mb-1" for="name">Name:</label>
-                    <input type="text" id="name" name="name" class="w-full p-2 border rounded-md" required>
+                    <input type="text" id="name" name="name" formControlName="name" [(ngModel)]="formState.name"
+                        class="w-full p-2 border rounded-md" required>
+                    <div *ngIf="myFrom.controls['name'].invalid && myFrom.controls['name'].touched"
+                        class="alert alert-danger">
+                        <div *ngIf="myFrom.controls['name'].errors.required">
+                            Name is required.
+                        </div>
+                    </div>
                 </div>
                 <div class="mb-4">
                     <label class="block font-semibold mb-1" for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="w-full p-2 border rounded-md" required>
+                    <input type="email" id="email" name="email" formControlName="email" [(ngModel)]="formState.email"
+                        class="w-full p-2 border rounded-md" required>
+                    <div *ngIf="myFrom.controls['email'].invalid && myFrom.controls['email'].touched"
+                        class="alert alert-danger">
+                        <div *ngIf="myFrom.controls['email'].errors.required">
+                            email is required.
+                        </div>
+                    </div>
                 </div>
-            
+
+                <div class="mb-4">
+                    <label class="block font-semibold mb-1" for="phone_number">Phone:</label>
+                    <input type="number" id="phone_number" name="phone_number" formControlName="phone"
+                        [(ngModel)]="formState.phone" class="w-full p-2 border rounded-md" required>
+                    <div *ngIf="myFrom.controls['phone'].invalid && myFrom.controls['phone'].touched"
+                        class="alert alert-danger">
+                        <div *ngIf="myFrom.controls['phone'].errors.required">
+                            Phone number is required.
+                        </div>
+                    </div>
+                </div>
+
                 <div class="mb-4">
                     <label class="block font-semibold mb-1" for="message">Message:</label>
-                    <textarea id="message" name="message" class="w-full p-2 border rounded-md resize-none" required></textarea>
+                    <textarea id="message" formControlName="message" [(ngModel)]="formState.message" name="message"
+                        class="w-full p-2 border rounded-md resize-none" required></textarea>
+                    <div *ngIf="myFrom.controls['message'].invalid && myFrom.controls['message'].touched"
+                        class="alert alert-danger">
+                        <div *ngIf="myFrom.controls['message'].errors.required">
+                            message is required.
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="submitted">
+                    <p style="color: green;">Your Request has been Submited</p>
+                </div>
+                <div *ngIf="emptyValue">
+                    <p style="color: red;">Please fill all the fields</p>
+                </div>
+                <div *ngIf="error">
+                    <p style="color: red;">OOps there is an Error</p>
                 </div>
                 <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md">Submit</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
             </form>
         </div>
 
