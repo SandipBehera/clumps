@@ -12,12 +12,13 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', redirectTo:'',pathMatch: 'full'},
   {path: 'about-us', component: AboutUsComponent},
-  {path: 'product/web-development', component:WebDevelopmentComponent },
-  {path: 'product/software-development', component:SoftwareDevelopmentComponent },
-  {path: 'product/app-development', component:AppDevelopmentComponent },
-  {path: 'product/social-media-ads', component:SocialMediaComponent },
-  {path: 'product/business-automation', component:BusinessAutomationComponent },
+  {path: 'service/web-development', component:WebDevelopmentComponent },
+  {path: 'service/software-development', component:SoftwareDevelopmentComponent },
+  {path: 'service/app-development', component:AppDevelopmentComponent },
+  {path: 'service/social-media-ads', component:SocialMediaComponent },
+  {path: 'service/business-automation', component:BusinessAutomationComponent },
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

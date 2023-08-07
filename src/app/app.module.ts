@@ -16,6 +16,7 @@ import { AppDevelopmentComponent } from './pages/services/app-development/app-de
 import { SocialMediaComponent } from './pages/services/social-media/social-media.component';
 import { BusinessAutomationComponent } from './pages/services/business-automation/business-automation.component';
 import { ContactComponent } from './layouts/contact/contact.component';
+import { ProductsRoutingModule } from './products/products-routing.module';
 
 @NgModule({
   declarations: [
@@ -31,12 +32,14 @@ import { ContactComponent } from './layouts/contact/contact.component';
     AppDevelopmentComponent,
     SocialMediaComponent,
     BusinessAutomationComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
+    ProductsRoutingModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
