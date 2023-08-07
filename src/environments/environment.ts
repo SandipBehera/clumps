@@ -3,9 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  hostURL:'http://localhost',
-  envname:'local'
+  production: true,
+  hostURL: 'https://www.clumpssoftware.com/',
+  envname: 'prod',
 };
 
 /*

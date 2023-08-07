@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  hostURL:'http://localhost',
-  envname:'prod'
+  hostURL: 'https://www.clumpssoftware.com/',
+  envname: 'prod',
 };
