@@ -52,7 +52,6 @@ export class ContactComponent implements OnInit {
         phone: this.formState.phone,
         description: this.formState.message,
       };
-      console.log(createContactInput);
       if (
         createContactInput.name !== '' ||
         createContactInput.email !== '' ||

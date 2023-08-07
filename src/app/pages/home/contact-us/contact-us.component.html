@@ -1,4 +1,4 @@
-<form>
+<form [formGroup]="myFrom" (ngSubmit)="handleSubmit()">
     <div class="mb-4 flex flex-row gap-5">
         <div class="flex items-center justify-center">
             <input type="radio" id="say_hi" name="choice" value="Say Hi" checked class="mr-2 w-[20px] h-[20px]">
@@ -11,16 +11,55 @@
     </div>
     <div class="mb-4">
         <label class="block font-semibold mb-1" for="name">Name:</label>
-        <input type="text" id="name" name="name" class="w-full p-2 border rounded-md" required>
+        <input type="text" id="name" name="name" formControlName="name" [(ngModel)]="formState.name"
+            class="w-full p-2 border rounded-md" required>
+        <div *ngIf="myFrom.controls['name'].invalid && myFrom.controls['name'].touched" class="alert alert-danger">
+            <div *ngIf="myFrom.controls['name'].errors.required">
+                Name is required.
+            </div>
+        </div>
     </div>
     <div class="mb-4">
         <label class="block font-semibold mb-1" for="email">Email:</label>
-        <input type="email" id="email" name="email" class="w-full p-2 border rounded-md" required>
+        <input type="email" id="email" name="email" formControlName="email" [(ngModel)]="formState.email"
+            class="w-full p-2 border rounded-md" required>
+        <div *ngIf="myFrom.controls['email'].invalid && myFrom.controls['email'].touched" class="alert alert-danger">
+            <div *ngIf="myFrom.controls['email'].errors.required">
+                email is required.
+            </div>
+        </div>
     </div>
 
     <div class="mb-4">
+        <label class="block font-semibold mb-1" for="phone_number">Phone:</label>
+        <input type="number" id="phone_number" name="phone_number" formControlName="phone" [(ngModel)]="formState.phone"
+            class="w-full p-2 border rounded-md" required>
+        <div *ngIf="myFrom.controls['phone'].invalid && myFrom.controls['phone'].touched" class="alert alert-danger">
+            <div *ngIf="myFrom.controls['phone'].errors.required">
+                Phone number is required.
+            </div>
+        </div>
+    </div>
+    <div class="mb-4">
         <label class="block font-semibold mb-1" for="message">Message:</label>
-        <textarea id="message" name="message" class="w-full p-2 border rounded-md resize-none" required></textarea>
+        <textarea id="message" formControlName="message" [(ngModel)]="formState.message" name="message"
+            class="w-full p-2 border rounded-md resize-none" required></textarea>
+        <div *ngIf="myFrom.controls['message'].invalid && myFrom.controls['message'].touched"
+            class="alert alert-danger">
+            <div *ngIf="myFrom.controls['message'].errors.required">
+                message is required.
+            </div>
+        </div>
+    </div>
+    <div *ngIf="submitted">
+        <p style="color: green;">Your Request has been Submited</p>
+    </div>
+    <div *ngIf="emptyValue">
+        <p style="color: red;">Please fill all the fields</p>
+    </div>
+    <div *ngIf="error">
+        <p style="color: red;">OOps there is an Error</p>
     </div>
     <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md">Submit</button>
+    <div id="msgSubmit" class="h3 text-center hidden"></div>
 </form>
