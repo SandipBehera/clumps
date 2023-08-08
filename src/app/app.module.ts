@@ -17,6 +17,8 @@ import { SocialMediaComponent } from './pages/services/social-media/social-media
 import { BusinessAutomationComponent } from './pages/services/business-automation/business-automation.component';
 import { ContactComponent } from './layouts/contact/contact.component';
 import { ProductsRoutingModule } from './products/products-routing.module';
+import { ProductsModule } from './products/products.module';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +41,7 @@ import { ProductsRoutingModule } from './products/products-routing.module';
     ProductsRoutingModule,
     AppRoutingModule,
     FormsModule,
-   
+    ProductsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

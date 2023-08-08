@@ -19,7 +19,6 @@ const routes: Routes = [
   {path: 'service/business-automation', component:BusinessAutomationComponent },
 ];
 
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
