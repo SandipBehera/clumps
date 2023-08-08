@@ -18,6 +18,7 @@ import { SocialMediaComponent } from './pages/services/social-media/social-media
 import { SoftwareDevelopmentComponent } from './pages/services/software-development/software-development.component';
 import { WebDevelopmentComponent } from './pages/services/web-development/web-development.component';
 import { FooterComponent } from './layouts/footer/footer.component';
+import { ProductsModule } from './products/products.module';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    ProductsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
