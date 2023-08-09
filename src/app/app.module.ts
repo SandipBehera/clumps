@@ -18,6 +18,7 @@ import { SocialMediaComponent } from './pages/services/social-media/social-media
 import { SoftwareDevelopmentComponent } from './pages/services/software-development/software-development.component';
 import { WebDevelopmentComponent } from './pages/services/web-development/web-development.component';
 import { FooterComponent } from './layouts/footer/footer.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
     SocialMediaComponent,
     BusinessAutomationComponent,
     ContactComponent,
+    PrivacyComponent,
   ],
   imports: [
     BrowserModule,

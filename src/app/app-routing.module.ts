@@ -7,21 +7,28 @@ import { SoftwareDevelopmentComponent } from './pages/services/software-developm
 import { AppDevelopmentComponent } from './pages/services/app-development/app-development.component';
 import { SocialMediaComponent } from './pages/services/social-media/social-media.component';
 import { BusinessAutomationComponent } from './pages/services/business-automation/business-automation.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'home', redirectTo:'',pathMatch: 'full'},
-  {path: 'about-us', component: AboutUsComponent},
-  {path: 'service/web-development', component:WebDevelopmentComponent },
-  {path: 'service/software-development', component:SoftwareDevelopmentComponent },
-  {path: 'service/app-development', component:AppDevelopmentComponent },
-  {path: 'service/social-media-ads', component:SocialMediaComponent },
-  {path: 'service/business-automation', component:BusinessAutomationComponent },
+  { path: '', component: HomeComponent },
+  { path: 'home', redirectTo: '', pathMatch: 'full' },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'service/web-development', component: WebDevelopmentComponent },
+  {
+    path: 'service/software-development',
+    component: SoftwareDevelopmentComponent,
+  },
+  { path: 'service/app-development', component: AppDevelopmentComponent },
+  { path: 'service/social-media-ads', component: SocialMediaComponent },
+  {
+    path: 'service/business-automation',
+    component: BusinessAutomationComponent,
+  },
+  { path: 'privacy', component: PrivacyComponent },
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
