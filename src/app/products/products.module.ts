@@ -6,13 +6,15 @@ import { ProductComponent } from './product/product.component';
 import { CrmPlusComponent } from './crm-plus/crm-plus.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import {HeaderComponent} from './layouts/header/header.component';
+import { ContactUsComponent } from './layouts/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
     ProductComponent,
     CrmPlusComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ContactUsComponent
   ],
   imports: [
     CommonModule,
