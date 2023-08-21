@@ -1,0 +1,102 @@
+<app-header></app-header>
+<section class="w-full flex flex-col my-10 items-center px-5 mb-5">
+    <div class="w-full flex flex-col md:flex-row justify-between mt-[150px]">
+        <div class="w-full md:w-[48%] flex flex-col justify-center items-start gap-5 md:mt-5">
+            <h2 class="text-[45px] md:text-[60px] text-black font-bold">
+                Optimize Retail Operations for Success
+            </h2>
+            <p class=" text-[#424040] md:text-[#6b6b84]">
+                Clumps Retail Plus is a feature-rich retail management software designed to streamline and automate
+                retail operations. From inventory management and point-of-sale (POS) systems to customer relationship
+                management and analytics, our solution empowers retailers to deliver exceptional customer experiences,
+                optimize inventory levels, and drive profitability. Take control of your retail business with Clumps
+                Retail Plus.
+            </p>
+
+        </div>
+        <div class="w-full md:flex md:w-[58%]  justify-center">
+            <div class="max-w-md w-full p-6 bg-white rounded-lg shadow-lg">
+                <h2 class="text-[16px] text-[#F0483E] text-center font-semibold mb-4">Get Started With Your Free Trial
+                </h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="w-1/2 mr-2">
+                            <label for="username" class="block text-gray-700 font-medium mb-2">Username</label>
+                            <input type="text" id="username" name="username"
+                                class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div class="w-1/2 ml-2">
+                            <label for="contact" class="block text-gray-700 font-medium mb-2">Contact Number</label>
+                            <input type="tel" id="contact" name="contact"
+                                class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="block text-gray-700 font-medium mb-2">Password</label>
+                        <input type="password" id="password" name="password"
+                            class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="terms" class="flex items-center">
+                            <input type="checkbox" id="terms" name="terms" class="mr-2">
+                            <span class="text-gray-700">I agree to the <a href="#" class="text-blue-500">Terms of
+                                    Service</a> and <a href="#" class="text-blue-500">Privacy Policy</a></span>
+                        </label>
+                    </div>
+                    <button type="submit"
+                        class="w-full py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">GET
+                        STARTED</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w-full flex flex-col my-10 items-center px-5 mb-5 gap-y-5">
+    <div class="w-[80%] text-center my-5">
+        <h2 class="font-bold text-[50px]">Discover solutions</h2>
+    </div>
+    <div class="w-full flex flex-row justify-center items-start flex-wrap gap-5">
+        <div *ngFor="let items of Discover"
+            class="w-[30%] min-h-[400px] flex flex-col text-center border-2 rounded-xl bg-[#C8EBF0] p-4">
+            <h2 class="font-bold text-[20px] my-2">{{items.name}}</h2>
+            <p>{{items.desc}}</p>
+        </div>
+    </div>
+</section>
+
+<section class="w-full flex flex-col my-10 items-center px-5 mb-5 gap-y-5">
+    <div class="w-[80%] text-center my-5">
+        <h2 class="font-bold text-[50px] my-3">Unique Features Of Clumps Retail Suite.</h2>
+        <p class="text-[14px]">Thanks to the smart automatic generating of planograms optimized according to sales based
+            on user-defined templates it is possible to maintain the planograms in up-to-date state also in large sales
+            networks with diverse stores without increasing demands on human resources.</p>
+    </div>
+    <div class="w-full flex flex-row justify-center items-start flex-wrap gap-5">
+        <div class="w-[80%] flex flex-row justify-center items-center flex-wrap text-start p-4">
+            <p class="w-[48%]">Multilayer floor plans</p>
+            <p class="w-[48%]">Clumps Task Management</p>
+            <p class="w-[48%]">Connection to (semi) automatic ordering</p>
+            <p class="w-[48%]">Shelf label management linked to planograms</p>
+            <p class="w-[48%]">Planograms optimized according to sales</p>
+            <p class="w-[48%]">Modern web interface for planogram distribution and communication</p>
+            <p class="w-[48%]">Flexible category hierarchy</p>
+            <p class="w-[48%]">Connection to sales data and advanced reporting</p>
+            <p class="w-[48%]">Easy photo documentation of sales areas</p>
+            <p class="w-[48%]">Anomaly prediction and detection</p>
+            <p class="w-[48%]">3D visualization</p>
+            <p class="w-[48%]">Product library with user-definable attributes</p>
+        </div>
+    </div>
+</section>
+<section>
+    <app-contact-us></app-contact-us>
+</section>
+<section>
+    <app-footer></app-footer>
+</section>

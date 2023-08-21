@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  hostUrl=environment.hostURL;
   Allservices:any=[
     {id:'01',name:'Website Design and Development',URL:'service/web-development'},
     {id:'02',name:'Custom Software Development',URL:'service/software-development'},
@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
   ]
   constructor() { }
 
-  hostUrl=environment.hostURL;
+  
   ngOnInit(): void {
   }
 
