@@ -13,7 +13,7 @@ module.exports = {
       '2xl': '1536px',
     }
   },
-  plugins: [],
+  plugins: [require("daisyui")],
   backgroundImage: {
     'contactus-img': "url('./assets/frontent_files/img/product/contact-us.png')",
     'footer-texture': "url('/img/footer-texture.png')",
