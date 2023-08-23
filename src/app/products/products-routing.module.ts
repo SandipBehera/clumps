@@ -13,7 +13,7 @@ const routes: Routes = [
     path:"product",children:[
       {path:'crm-plus',component:CrmPlusComponent},
       {path:'retail-suite',component:RetailSuiteComponent},
-      {path:'clumps-ecommerce-suite',component:ClumpsEcommerceSuiteComponent},
+      {path:'clumps-e-commerce-suite',component:ClumpsEcommerceSuiteComponent},
       {path:'clumps-marketing-suite',component:ClumpsMarketingSuiteComponent},
       {path:'clumps-systemic-solutions-erp',component:ClumpsSystemicSolutionsERPComponent},
     ]
