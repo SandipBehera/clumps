@@ -1,7 +1,7 @@
 <app-header></app-header>
-<section class="w-full flex flex-col my-10 items-center px-5 mb-5">
-    <div class="w-full flex flex-col md:flex-row justify-between mt-[150px]">
-        <div class="w-full md:w-[48%] flex flex-col justify-center items-start gap-5 md:mt-5">
+<section class="w-full flex flex-col my-10 items-center md:px-5 mb-5">
+    <div class="w-full flex flex-col-reverse md:flex-row justify-between mt-[150px] gap-20">
+        <div class="w-full md:w-full md:w-[48%] flex flex-col justify-center items-start gap-5 md:mt-5">
             <h2 class="text-[45px] md:text-[60px] text-black font-bold">
                 Optimize Retail Operations for Success
             </h2>
@@ -57,40 +57,40 @@
     </div>
 </section>
 
-<section class="w-full flex flex-col my-10 items-center px-5 mb-5 gap-y-5">
-    <div class="w-[80%] text-center my-5">
+<section class="w-full flex flex-col my-10 items-center md:px-5 mb-5 gap-y-5">
+    <div class="w-full md:w-[80%] text-center my-5">
         <h2 class="font-bold text-[50px]">Discover solutions</h2>
     </div>
     <div class="w-full flex flex-row justify-center items-start flex-wrap gap-5">
         <div *ngFor="let items of Discover"
-            class="w-[30%] min-h-[400px] flex flex-col text-center border-2 rounded-xl bg-[#C8EBF0] p-4">
+            class="w-full md:w-[30%] min-h-[400px] flex flex-col text-center border-2 rounded-xl bg-[#C8EBF0] p-4">
             <h2 class="font-bold text-[20px] my-2">{{items.name}}</h2>
             <p>{{items.desc}}</p>
         </div>
     </div>
 </section>
 
-<section class="w-full flex flex-col my-10 items-center px-5 mb-5 gap-y-5">
-    <div class="w-[80%] text-center my-5">
+<section class="w-full flex flex-col my-10 items-center md:px-5 mb-5 gap-y-5">
+    <div class="w-full md:w-[80%] text-center my-5">
         <h2 class="font-bold text-[50px] my-3">Unique Features Of Clumps Retail Suite.</h2>
         <p class="text-[14px]">Thanks to the smart automatic generating of planograms optimized according to sales based
             on user-defined templates it is possible to maintain the planograms in up-to-date state also in large sales
             networks with diverse stores without increasing demands on human resources.</p>
     </div>
     <div class="w-full flex flex-row justify-center items-start flex-wrap gap-5">
-        <div class="w-[80%] flex flex-row justify-center items-center flex-wrap text-start p-4">
-            <p class="w-[48%]">Multilayer floor plans</p>
-            <p class="w-[48%]">Clumps Task Management</p>
-            <p class="w-[48%]">Connection to (semi) automatic ordering</p>
-            <p class="w-[48%]">Shelf label management linked to planograms</p>
-            <p class="w-[48%]">Planograms optimized according to sales</p>
-            <p class="w-[48%]">Modern web interface for planogram distribution and communication</p>
-            <p class="w-[48%]">Flexible category hierarchy</p>
-            <p class="w-[48%]">Connection to sales data and advanced reporting</p>
-            <p class="w-[48%]">Easy photo documentation of sales areas</p>
-            <p class="w-[48%]">Anomaly prediction and detection</p>
-            <p class="w-[48%]">3D visualization</p>
-            <p class="w-[48%]">Product library with user-definable attributes</p>
+        <div class="w-full md:w-[80%] flex flex-row justify-center items-center flex-wrap text-start p-4">
+            <p class="w-full md:w-[48%]">Multilayer floor plans</p>
+            <p class="w-full md:w-[48%]">Clumps Task Management</p>
+            <p class="w-full md:w-[48%]">Connection to (semi) automatic ordering</p>
+            <p class="w-full md:w-[48%]">Shelf label management linked to planograms</p>
+            <p class="w-full md:w-[48%]">Planograms optimized according to sales</p>
+            <p class="w-full md:w-[48%]">Modern web interface for planogram distribution and communication</p>
+            <p class="w-full md:w-[48%]">Flexible category hierarchy</p>
+            <p class="w-full md:w-[48%]">Connection to sales data and advanced reporting</p>
+            <p class="w-full md:w-[48%]">Easy photo documentation of sales areas</p>
+            <p class="w-full md:w-[48%]">Anomaly prediction and detection</p>
+            <p class="w-full md:w-[48%]">3D visualization</p>
+            <p class="w-full md:w-[48%]">Product library with user-definable attributes</p>
         </div>
     </div>
 </section>
