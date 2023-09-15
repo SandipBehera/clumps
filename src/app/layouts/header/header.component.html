@@ -1,32 +1,108 @@
-<header class="absolute top-0 left-0">
-    <input type="checkbox" name="" id="chk1">
-    <div class="logo">
-        <a [routerLink]="['/home']" >
-            <img src="{{hostUrl}}assets/frontent_files/img/clumpssoftware.png" alt=""/>
+<div class="navbar bg-base-100 fixed top-0 left-0 z-10 shadow-lg lg:px-20">
+    <div class="navbar-start w-full md:w-auto">
+        <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a routerLink="/home">Home</a></li>
+                <li><a routerLink="/about-us">About US</a></li>
+                <li>
+                    <details close>
+                        <summary>Products</summary>
+                        <ul>
+                            <li *ngFor="let item of AllProducts"><a routerLink="/{{item.URL}}">{{item.name}}</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details close>
+                        <summary>Services</summary>
+                        <ul>
+                            <li *ngFor="let item of Allservices"><a routerLink="/{{item.URL}}">{{item.name}}</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a routerLink="/#">Contact US</a></li>
+                <li class="py-[10px] px-[15px] border-[1px] border-[#191A23] rounded-[14px]"><a href="#">Request a
+                        quote</a></li>
+            </ul>
+        </div>
+        <a class="cursor-pointer">
+            <img routerLink="/home" src="https://www.clumpssoftware.com/assets/frontent_files/img/clumpssoftware.png"
+                alt="" srcset="">
         </a>
-        
     </div>
-    <!-- <div class="search-box">
-            <form>
-                <input type ="text" name ="search" id ="srch" placeholder="Search">
-                <button type ="submit"><i class="fa fa-search"></i></button>
-            </form>
+    <div class="hidden lg:w-[50%] lg:flex flex-row flex-nowrap justify-around items-start">
+        <div class="w-max py-[10px]">
+            <a [routerLink]="['/home']">
+                <p class="cursor-pointer cool-link">Home</p>
+            </a>
+        </div>
+        <div class="w-max py-[10px]">
+            <a [routerLink]="['/about-us']">
+                <p class="cursor-pointer cool-link">About Us</p>
+            </a>
+        </div>
+        <div class="dropdown py-[10px]">
+            <p tabindex="0" class="cursor-pointer cool-link">Product</p>
+            <ul tabindex="0"
+                class="w-[700px] menu menu-sm dropdown-content drop-shadow-xl rounded-md p-2 z-10 left-[-620px] top-[40px]  bg-[#fff]">
+                <!-- <div class="absolute h-[25px] w-[25px] rotate-45 bg-[#fff] top-[-12px] right-5 shadow-xl z-9"></div> -->
+                <li *ngFor="let item of AllProducts" class="p-1 mb-1">
+                    <a class="hover:link-accent " routerLink="/{{item.URL}}">{{item.name}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="dropdown py-[10px]">
+            <p tabindex="0" class="cursor-pointer cool-link">Services</p>
+            <ul class="menu menu-sm dropdown-content shadow-xl rounded-md p-2 z-10 left-[-250px] bg-[#fff]">
+                <li *ngFor="let item of Allservices" class="p-1 mb-1">
+                    <a class="hover:link-accent" routerLink="/{{item.URL}}">{{item.name}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-max py-[10px]">
+            <a [routerLink]="['/about-us']">
+                <p class="cursor-pointer cool-link">Contact Us</p>
+            </a>
+        </div>
+        <div class="w-max py-[10px] px-[15px] border-[1px] border-[#191A23] rounded-[14px]">
+            <a [routerLink]="['#']">
+                <p class="cursor-pointer cool-link">Request a
+                    quote</p>
+            </a>
+        </div>
+        <!-- <div class="w-max">
+            <p class="cursor-pointer cool-link">Blog</p>
         </div> -->
-    <ul>
-        <li><a routerLink="about-us">About Us</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Blog</a></li>
-        <li class="py-[10px] px-[15px] border-[1px] border-[#191A23] rounded-[14px]"><a href="#" >Request a quote</a></li>
-    </ul>
-    <div class="menu">
-        <label for="chk1">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 50 50">
-                <path
-                    d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
-                </path>
-            </svg> 
-        </label>
+        <!-- <ul class="menu menu-horizontal px-1">
+            <li><a>About Us</a></li>
+            <li >
+                <details tabindex="0">
+                    <summary tabindex="0">Product</summary>
+                    <ul class=" p-2 z-10 left-[-200px]" >
+                        <li *ngFor="let item of AllProducts" class=" text-ellipsis">
+                            <a class="hover:link-accent" routerLink="/{{item.URL}}">{{item.name}}</a>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+            <li >
+                <details>
+                    <summary>Services</summary>
+                    <ul class="p-2 z-10 left-[-250px] list-disc">
+                        <li *ngFor="let item of Allservices">
+                            <a class="hover:link-accent" routerLink="/{{item.URL}}">{{item.name}}</a>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+            <li><a>Blog</a></li>
+            <li class="text-center"><a class="btn">Button</a></li>
+        </ul> -->
     </div>
-</header>
+</div>

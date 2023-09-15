@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  hostUrl=environment.hostURL;
   Allservices:any=[
     {id:'01',name:'Website Design and Development',URL:'service/web-development'},
     {id:'02',name:'Custom Software Development',URL:'service/software-development'},
@@ -16,12 +16,12 @@ export class HomeComponent implements OnInit {
     {id:'06',name:'Video Ad Making & Content Creation',URL:''},
   ]
   AllProducts:any=[
-    {id:'01',name:'Clumps Systemic Solutions',URL:''},
-    {id:'02',name:'Clumps CRM Plus',URL:''},
-    {id:'03',name:'Clumps Service AUTOBOT',URL:''},
-    {id:'04',name:'Clumps Service & Support Desk',URL:''},
-    {id:'05',name:'Clumps Retail & Distributor  Suite',URL:''},
-    {id:'06',name:'Clumps One Marketing Suite',URL:''},
+    {id:'01',name:'Clumps Systemic Solutions',URL:'product/clumps-systemic-solutions-erp'},
+    {id:'02',name:'Clumps CRM Plus',URL:'product/crm-plus'},
+    {id:'03',name:'Clumps E-commerce',URL:'product/clumps-e-commerce-suite'},
+    {id:'04',name:'Clumps Service & Support Desk',URL:'product/clumps-systemic-solutions-erp'},
+    {id:'05',name:'Clumps Retail & Distributor  Suite',URL:'product/retail-suite'},
+    {id:'06',name:'Clumps One Marketing Suite',URL:'product/clumps-marketing-suite'},
   ]
   WorkProgress:any=[
     {id:'01',name:'Consultation',desc:`Initial client meeting to understand their business goals and challenges.
@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
   ]
   constructor() { }
 
-  hostUrl=environment.hostURL;
+  
   ngOnInit(): void {
   }
 

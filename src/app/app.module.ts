@@ -19,6 +19,8 @@ import { SoftwareDevelopmentComponent } from './pages/services/software-developm
 import { WebDevelopmentComponent } from './pages/services/web-development/web-development.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { ProductsModule } from './products/products.module';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
     BusinessAutomationComponent,
     ContactComponent,
     PrivacyComponent,
+    AboutUsComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    ProductsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

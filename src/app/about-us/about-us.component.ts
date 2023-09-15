@@ -10,7 +10,6 @@ export class AboutUsComponent implements OnInit {
 
   constructor() { }
   hostUrl=environment.hostURL
-
   ngOnInit(): void {
   }
 

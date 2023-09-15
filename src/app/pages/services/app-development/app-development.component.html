@@ -62,11 +62,10 @@
         </p>
     </div>
     <div class="w-full flex flex-row  flex-wrap justify-center mt-[150px] gap-5  mb-5">
-        <div *ngFor="let item of mobileDev" class="w-[45%] md:w-[28%] flex flex-col gap-5 border-2 p-4 rounded-[40px] justify-center items-center">
+        <div *ngFor="let item of mobileDev" class="w-[100%] md:w-[28%] flex flex-col gap-5 border-2 p-4 rounded-[40px] justify-center items-center">
             <h2 class="text-[20px] font-bold h-[85px] sm:h-[75px] md:h-[50px]">{{item.name}}</h2>
             <hr class="w-full border-[2px]">
             <div class="w-full flex justify-center items-center">
-                    
                     <img class="w-auto h-[70px] md:h-[100px]" src="{{hostUrl}}assets/frontent_files/img/services/app-development/icons/{{item.URL}}" />
             </div>
         </div>
@@ -183,3 +182,7 @@
     </div>
 </section>
 <app-contact></app-contact>
+<!-- footer -->
+<section>
+    <app-footer class="w-full absolute left-0"></app-footer>
+</section>

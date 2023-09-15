@@ -1,0 +1,121 @@
+<app-header logo="Clumps  Marketing Suite"></app-header>
+<section class="w-full flex flex-col my-10 items-center md:px-5 mb-5">
+    <div class="w-full flex flex-col-reverse md:flex-row justify-between mt-[150px] gap-20">
+        <div class="w-full md:w-[48%] flex flex-col justify-center items-start gap-5 md:mt-5">
+            <h2 class="text-[45px] md:text-[60px] text-black font-bold">
+                Elevate Your Marketing Campaigns
+            </h2>
+            <p class=" text-[#424040] md:text-[#6b6b84]">
+                Clumps Marketing Plus is a comprehensive marketing platform that empowers businesses to effectively
+                manage and run ads on various platforms. From Google Ads and WhatsApp to Instagram, Meta, and LinkedIn,
+                our platform simplifies campaign management, targeting, and tracking, allowing you to reach your target
+                audience with precision. Maximize your marketing ROI, increase brand visibility, and drive conversions
+                with Clumps Marketing Plus.
+            </p>
+
+        </div>
+        <div class="w-full md:flex md:w-[58%]  justify-center">
+            <div class="max-w-md w-full p-6 bg-white rounded-lg shadow-lg">
+                <h2 class="text-[16px] text-[#F0483E] text-center font-semibold mb-4">Get Started With Your Free Trial
+                </h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="w-1/2 mr-2">
+                            <label for="username" class="block text-gray-700 font-medium mb-2">Username</label>
+                            <input type="text" id="username" name="username"
+                                class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div class="w-1/2 ml-2">
+                            <label for="contact" class="block text-gray-700 font-medium mb-2">Contact Number</label>
+                            <input type="tel" id="contact" name="contact"
+                                class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="block text-gray-700 font-medium mb-2">Password</label>
+                        <input type="password" id="password" name="password"
+                            class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="terms" class="flex items-center">
+                            <input type="checkbox" id="terms" name="terms" class="mr-2">
+                            <span class="text-gray-700">I agree to the <a href="#" class="text-blue-500">Terms of
+                                    Service</a> and <a href="#" class="text-blue-500">Privacy Policy</a></span>
+                        </label>
+                    </div>
+                    <button type="submit"
+                        class="w-full py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">GET
+                        STARTED</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="w-full flex flex-col mt-[150px] mb-[100px]">
+    <div class="w-full flex flex-col justify-center text-center items-center">
+        <h2 class="text-start md:text-center text-[30px] font-bold ">
+            Solving The Customer Engagement Puzzle Across Industries
+        </h2>
+        <p class="w-full md:w-[80%]">
+            Get expert consultation, setup assistance and a 24 x 7 available support. We make sure that the only tough
+            part for you is managing sales.
+        </p>
+    </div>
+    <div class="w-full flex flex-col md:flex-row  flex-wrap justify-center mt-[50px] gap-5  ">
+        <div *ngFor="let item of Engagement" class="w-full md:w-[28%] flex flex-col gap-5 border-2 p-4 rounded-[40px]">
+            <h2 class="text-[20px] font-bold ">{{item.name}}</h2>
+            <hr class="w-full border-[2px]">
+            <div>
+                <p>
+                    {{item.desc}}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="w-full flex flex-col justify-center text-center items-center">
+        <button type="button" class="py-[10px] px-[15px] border-[1px] border-[#191A23] rounded-[14px] text-[#000] mt-5">
+            Get in touch
+        </button>
+    </div>
+    <div class="flex flex-col flex-wrap justify-center items-center my-5">
+        <div class="w-full md:w-[70%] flex flex-col md:flex-row justify-center items-center">
+            <div class="flex flex-col justify-center items-start gap-y-5">
+                <h2 class="text-[30px] font-bold text-[#33B5CC]">360° View of your Customers’ Data on a Single Screen
+                </h2>
+                <p>Leverage user profiles to understand everything from demographic and behavioral data, custom
+                    attributes, channel reachability, etc. to run targeted campaigns for the right set of users.</p>
+            </div>
+            <img class="w-full md:w-[50%]" src="{{hostUrl}}assets/frontent_files/img/product/marketing/marketing-1.png" alt=""
+                srcset="">
+        </div>
+        <div class="w-full md:w-[70%] flex flex-col-reverse md:flex-row justify-center items-center">
+            <img class="w-full md:w-[50%]" src="{{hostUrl}}assets/frontent_files/img/product/marketing/marketing-2.png" alt=""
+                srcset="">
+            <div class="flex flex-col justify-center items-start gap-y-5">
+                <h2 class="text-[30px] font-bold text-[#33B5CC]">Personalize your campaigns at scale!</h2>
+                <p>Drive brand loyalty and increase customer engagement with well-timed, relevant, personal, and
+                    contextual messages.</p>
+            </div>
+        </div>
+        <div class="w-full md:w-[70%] flex flex-col md:flex-row justify-center items-center">
+            <div class="flex flex-col justify-center items-start gap-y-5">
+                <h2 class="text-[30px] font-bold text-[#33B5CC]">Automate your Marketing Campaigns in a Few Simple
+                    Clicks .</h2>
+                <p>Create automation workflows within minutes with our intuitive drag-and-drop editor.</p>
+            </div>
+            <img class="w-full md:w-[50%]" src="{{hostUrl}}assets/frontent_files/img/product/marketing/marketing-3.png" alt=""
+                srcset="">
+        </div>
+    </div>
+</section>
+<section>
+    <app-contact-us></app-contact-us>
+</section>
+<section >
+    <app-footer class="w-full absolute left-0"></app-footer>
+</section>
