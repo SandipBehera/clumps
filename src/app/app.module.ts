@@ -19,6 +19,7 @@ import { SoftwareDevelopmentComponent } from './pages/services/software-developm
 import { WebDevelopmentComponent } from './pages/services/web-development/web-development.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { ProductsModule } from './products/products.module';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ProductsModule } from './products/products.module';
     SocialMediaComponent,
     BusinessAutomationComponent,
     ContactComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

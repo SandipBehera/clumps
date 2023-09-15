@@ -8,7 +8,7 @@
                 </svg>
             </label>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>About US</a></li>
+                <li><a routerLink="/about-us">About USggg</a></li>
                 <li >
                     <details close >
                         <summary>Product</summary>
@@ -34,7 +34,7 @@
     </div>
     <div class="hidden lg:w-[50%] lg:flex flex-row flex-nowrap justify-around items-start">
         <div class="w-max">
-            <p class="cursor-pointer cool-link">About Us</p>
+            <a [routerLink]="['/about-us']"><p class="cursor-pointer cool-link">About Us</p></a>
         </div>
         <div class="dropdown">
             <p tabindex="0" class="cursor-pointer cool-link">Product</p>

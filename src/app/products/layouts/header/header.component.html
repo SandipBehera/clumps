@@ -9,7 +9,7 @@
                 </svg>
             </label>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>About US</a></li>
+                <li><a [routerLink]="['/about-us']">About US</a></li>
                 <li >
                     <details close >
                         <summary>Product</summary>
@@ -29,13 +29,14 @@
                 <li><a>Blogs</a></li>
             </ul>
         </div>
-        <a [routerLink]="['/home']" class="cursor-pointer">
-            <img src="https://www.clumpssoftware.com/assets/frontent_files/img/clumpssoftware.png" alt="" srcset="">
+        <a [routerLink]="['/home']" class="cursor-pointer flex flex-nowrap">
+            <img class="h-[30px] xl:h-auto" src="./assets/frontent_files/img/clumpslogo.png" alt="" srcset="">
+            <p class="text-black text-[20px] xl:text-[30px] font-bold">{{logo}}</p>
         </a>
     </div>
     <div class="hidden lg:w-[50%] lg:flex flex-row flex-nowrap justify-around items-start">
         <div class="w-max">
-            <p class="cursor-pointer cool-link">About Us</p>
+            <a [routerLink]="['/about-us']" ><p class="cursor-pointer cool-link">About Us</p></a>
         </div>
         <div class="dropdown">
             <p tabindex="0" class="cursor-pointer cool-link">Product</p>
