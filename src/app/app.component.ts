@@ -16,7 +16,7 @@ export class AppComponent {
       "aws_appsync_graphqlEndpoint": "https://vktteuvmrrbetn6fnunchmpqgi.appsync-api.us-east-2.amazonaws.com/graphql",
       "aws_appsync_region": "us-east-2",
       "aws_appsync_authenticationType": "API_KEY",
-      "aws_appsync_apiKey": "da2-wqx6fbc7cfaanfxcmhrbvzrwwe",
+      "aws_appsync_apiKey": "da2-zixigx5cvbah7ckgddezechtzu",
       "aws_cognito_identity_pool_id": "us-east-2:02f859a7-a41e-4b7d-92d9-f45251937298",
       "aws_cognito_region": "us-east-2",
       "aws_user_pools_id": "us-east-2_TUqJKffGI",
