@@ -8,7 +8,7 @@ import { AppDevelopmentComponent } from './pages/services/app-development/app-de
 import { SocialMediaComponent } from './pages/services/social-media/social-media.component';
 import { BusinessAutomationComponent } from './pages/services/business-automation/business-automation.component';
 import { PrivacyComponent } from './privacy/privacy.component';
-import { ContactComponent } from './layout/contact/contact.component';
+import { ContactComponent } from './layouts/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
