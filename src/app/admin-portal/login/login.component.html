@@ -1,0 +1,48 @@
+<section class="w-full flex flex-col justify-center items-center">
+    <div class="w-full md:w-[80%] text-center">
+        <p class="font-bold text-[50px]">Clumps Admin</p>
+    </div>
+    <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <form [formGroup]="myFrom" (ngSubmit)="handleSubmit()">
+
+            <div class="mb-6">
+                <label class="block font-semibold mb-1" for="name">Username:</label>
+                <input type="text" id="username" name="username" formControlName="username"
+                    [(ngModel)]="formState.username" class="w-full p-2 border rounded-md" required>
+                <div *ngIf="myFrom.controls['username'].invalid && myFrom.controls['username'].touched"
+                    class="alert alert-danger">
+                    <div *ngIf="myFrom.controls['username'].errors.required">
+                        Username is required.
+                    </div>
+                </div>
+            </div>
+            <div class="mb-6">
+                <label class="block font-semibold mb-1" for="email">Password:</label>
+                <input type="password" id="password" name="password" formControlName="password"
+                    [(ngModel)]="formState.password" class="w-full p-2 border rounded-md" required>
+                <div *ngIf="myFrom.controls['password'].invalid && myFrom.controls['password'].touched"
+                    class="alert alert-danger">
+                    <div *ngIf="myFrom.controls['password'].errors.required">
+                        Password is required.
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="submitted">
+                <p style="color: green;">Your Request has been Submited</p>
+            </div>
+            <div *ngIf="emptyValue">
+                <p style="color: red;">Please fill all the fields</p>
+            </div>
+            <div *ngIf="error">
+                <p style="color: red;">OOps there is an Error</p>
+            </div>
+            <div *ngIf="invalidCredentials">
+                <p style="color: red;">Please enter valid credentials</p>
+            </div>
+            <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md">Login</button>
+            <div id="msgSubmit" class="h3 text-center hidden"></div>
+        </form>
+    </div>
+
+</section>

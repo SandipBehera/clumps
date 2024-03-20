@@ -4,6 +4,10 @@
 import { Injectable } from "@angular/core";
 import API, { graphqlOperation, GraphQLResult } from "@aws-amplify/api-graphql";
 import { Observable } from "zen-observable-ts";
+import { Blogs } from "./admin-portal/models/blogs";
+import { DatePipe, formatDate } from "@angular/common";
+import { pipe } from "rxjs";
+import { error } from "console";
 
 export interface SubscriptionResponse<T> {
   value: GraphQLResult<T>;
@@ -264,6 +268,75 @@ export type OnDeleteTodoSubscription = {
   providedIn: "root"
 })
 export class APIService {
+  counter=4;
+  isuserLoggedIn:boolean=false;
+  myBlogs:Blogs[]=[{
+    id:1,
+    title:"Harnessing Innovation: How Custom Software Solutions Empower Businesses",
+    description:"In today's fast-paced digital landscape, businesses must continuously adapt to stay competitive. Embracing innovation is no longer just an option but a necessity. At Clumps Software Solutions, we understand the vital role that technology plays in driving business success. Through our commitment to innovation and excellence, we empower businesses with tailored software solutions designed to meet their unique needs.",
+    createdAt: "2024-01-01"
+  },
+  {
+    id:2,
+    title:"Navigating the Digital Landscape: Clumps Solutions' Client-Centric Approach",
+    description:"In the dynamic realm of digital presence, brands are constantly challenged to stay relevant and impactful. At Clumps Solutions, our mission is clear: to empower businesses with website solutions that not only meet but exceed expectations, driving tangible results in the ever-evolving digital landscape",
+    createdAt: "2024-01-02"
+  },
+  {
+    id:3,
+    title:"Streamline Your Business with Custom Software Development Solutions",
+    description:"In today's fast-paced business landscape, time is money. Every moment spent on recruitment and onboarding is a valuable resource diverted from your core operations. But what if you could skip the exhaustive hiring process and seamlessly integrate tailor-made software solutions into your business",
+    createdAt: "2024-01-03"
+  },
+  {
+    id:4,
+    title:"Streamline Your Business with Custom Software Development Solutions",
+    description:"Clumps Software Solutions offers the perfect antidote to the traditional recruitment woes. Our custom software development services provide you with dedicated developers boasting vast industry-specific experience. Here's why our approach stands out",
+    createdAt: "2024-01-04"
+  },
+];
+  constructor()
+  {
+    // pipe = new DatePipe('en-US');
+  }
+  addBlogs(title: any, description: any) {
+    this.add_counter();
+    let data={
+      id:this.counter,
+      title:title,
+      description:description,
+      createdAt:formatDate(Date.now(), 'yyyy-MM-dd', 'en-US')
+    }
+    try
+    {
+      this.myBlogs.push(data);
+      return true;
+    }
+    catch(error){
+      return false;
+    }
+  }
+  getBlogs()
+  {
+    return this.myBlogs;
+  }
+  adminLogin(username: string, password: string) {
+    if (username=="admin" && password=="admin")
+    {
+      this.isuserLoggedIn=true;
+      return true;
+    }
+    else
+    {
+      this.isuserLoggedIn=false;
+      return false;
+    }
+  }
+  logout()
+  {
+    this.isuserLoggedIn=false;
+    return true;
+  }
   async CreateTodo(
     input: CreateTodoInput,
     condition?: ModelTodoConditionInput
@@ -485,4 +558,9 @@ export class APIService {
       SubscriptionResponse<Pick<__SubscriptionContainer, "onDeleteTodo">>
     >;
   }
+   add_counter() {
+    this.counter = this.counter+1
+  }
 }
+
+

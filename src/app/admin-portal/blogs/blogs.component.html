@@ -1,0 +1,47 @@
+<app-header logo="Clumps Blogs"></app-header>
+
+<section class="w-full flex flex-col my-10 md:px-5 mb-5">
+    <div class="w-full flex flex-col-reverse justify-center mt-[50px] gap-10 ">
+        <div class="grid grid-cols-2 gap-1 ">
+
+            <form [formGroup]="myFrom" (ngSubmit)="handleSubmit()">
+                <div class="mb-12">
+                    <label class="block font-semibold mb-1" for="name">Title:</label>
+                    <input type="text" id="title" name="title" formControlName="title"
+                        [(ngModel)]="formState.title" class="w-full p-2 border rounded-md" required>
+                    <div *ngIf="myFrom.controls['title'].invalid && myFrom.controls['title'].touched"
+                        class="alert alert-danger">
+                        <div *ngIf="myFrom.controls['title'].errors.required">
+                            Title is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <label class="block font-semibold mb-1" for="email">Description:</label>
+                    <textarea type="text" id="description" name="description" formControlName="description"
+                        [(ngModel)]="formState.description" class="w-full p-2 border rounded-md" required></textarea>
+                    <div *ngIf="myFrom.controls['description'].invalid && myFrom.controls['description'].touched"
+                        class="alert alert-danger">
+                        <div *ngIf="myFrom.controls['description'].errors.required">
+                            Description is required.
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="submitted">
+                    <p style="color: green;">Blog has been added!!</p>
+                </div>
+                <div *ngIf="emptyValue">
+                    <p style="color: red;">Please fill all the fields</p>
+                </div>
+                <div *ngIf="error">
+                    <p style="color: red;">OOps there is an Error</p>
+                </div>
+                <div *ngIf="invalidCredentials">
+                    <p style="color: red;">Please enter valid credentials</p>
+                </div>
+                <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md">Add</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+            </form>
+        </div>
+    </div>
+</section>

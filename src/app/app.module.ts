@@ -21,6 +21,10 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ProductsModule } from './products/products.module';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { AdminPortalModule } from './admin-portal/admin-portal.module';
+import { BlogsComponent } from './blogs/blogs.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
@@ -39,6 +43,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     ContactComponent,
     PrivacyComponent,
     AboutUsComponent,
+    BlogsComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,8 +52,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
     FormsModule,
     ReactiveFormsModule,
     ProductsModule,
+    AdminPortalModule,
+    NgxPaginationModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

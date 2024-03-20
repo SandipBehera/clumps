@@ -9,6 +9,7 @@ import { SocialMediaComponent } from './pages/services/social-media/social-media
 import { BusinessAutomationComponent } from './pages/services/business-automation/business-automation.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ContactComponent } from './layouts/contact/contact.component';
+import { BlogsComponent } from './blogs/blogs.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
     component: BusinessAutomationComponent,
   },
   { path: 'privacy', component: PrivacyComponent },
-  {path:'contact-us', component: ContactComponent}
+  {path:'contact-us', component: ContactComponent},
+  {path:'blogs',component:BlogsComponent}
 ];
 
 @NgModule({
